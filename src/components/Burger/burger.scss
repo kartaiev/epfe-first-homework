@@ -1,3 +1,5 @@
+@import '../../palette.scss';
+
 .Burger {
   display: grid;
   align-content: space-between;
@@ -11,5 +13,5 @@
 .Burger__controller {
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: $color2;
 }
