@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SideMenuElement.scss';
 
+const SideMenuElement = props => {
+  const { name, link } = props;
+  return (
+    <div className="SideMenuElement">
+      <a className="SideMenuElement__link" href={link}>
+        {name}
+      </a>
+    </div>
+  );
+};
 
-export default class SideMenuElement extends Component {
-  constructor(props) {
-    super();
-    this.name = props.name;
-    this.link = props.link;
-  }
-
-  render() {
-    return (
-      <div className="side-menu__item">
-        <a className="side-menu__link" href={this.link}>{this.name}</a>
-      </div>
-    );
-  }
-}
+export default SideMenuElement;
