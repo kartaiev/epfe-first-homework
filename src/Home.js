@@ -2,7 +2,7 @@ import './Home.scss';
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { wrap } from '@popmotion/popcorn';
-import { vids } from './assets/videos';
+import vids from './assets/videos';
 
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => {
