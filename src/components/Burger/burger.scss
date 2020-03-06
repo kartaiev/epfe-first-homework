@@ -1,0 +1,15 @@
+.tourmap__burger {
+  display: grid;
+  align-content: space-between;
+  width: 20%;
+  cursor: pointer;
+  &:hover > .tourmap__controller {
+    background-color: rgba(252, 72, 24, 1);
+  }
+}
+
+.tourmap__controller {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
