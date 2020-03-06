@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+}
+
+.tourmap {
+  width: 100%;
+
+  &__inner {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    padding: 40px 20px 40px 0;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: rgba(252, 72, 24, 1);
+    }
+  }
+
+  &__burger {
+    display: grid;
+    align-content: space-between;
+    width: 20%;
+    cursor: pointer;
+    &:hover > .tourmap__controller {
+      background-color: rgba(252, 72, 24, 1);
+    }
+  }
+
+  &__controller {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+}
