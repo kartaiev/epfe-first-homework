@@ -2,16 +2,18 @@
 
 .Burger {
   display: grid;
-  align-content: space-between;
+  align-content: space-around;
   width: 20%;
   cursor: pointer;
   &:hover > .Burger__controller {
-    background-color: rgba(252, 72, 24, 1);
+    background-color: $color3;
+  }
+
+  .Burger__controller {
+    height: 2px;
+    width: 100%;
+    background-color: $color2;
   }
 }
 
-.Burger__controller {
-  height: 3px;
-  width: 100%;
-  background-color: $color2;
-}
+
