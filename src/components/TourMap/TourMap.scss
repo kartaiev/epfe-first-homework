@@ -1,3 +1,4 @@
+
 body {
   background-color: #000;
 }
@@ -14,7 +15,9 @@ body {
   }
 
   &__title {
+    font-family:  Monserrat, 'sans-serif';
     width: 100%;
+    
     text-align: center;
     text-transform: uppercase;
     color: #fff;
