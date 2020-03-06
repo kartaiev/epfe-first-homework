@@ -2,15 +2,14 @@ import React from 'react';
 
 import './TourMap.scss';
 
+import Burger from '../Burger/Burger';
+
 const TourMap = () => {
   return (
     <div className="tourmap block">
       <div className="tourmap__inner">
         <span className="tourmap__title">Tourmap</span>
-        <div className="tourmap__burger">
-          <div className="tourmap__controller" />
-          <div className="tourmap__controller" />
-        </div>
+        <Burger />
       </div>
     </div>
   );
