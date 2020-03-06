@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d62ea0c-1c10-43b6-8386-85ea35114bee" name="Default Changelist" comment="" />
+    <list default="true" id="9d62ea0c-1c10-43b6-8386-85ea35114bee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/earth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/BlackinBlack.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/HighwaytoHell.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/T.N.T.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/Thunderstruck.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.utils/_flexes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.utils/_positionsSizes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,14 +47,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/videos" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.jsx" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/videos" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -56,36 +93,64 @@
       <updated>1583346925142</updated>
       <workItem from="1583346926629" duration="277000" />
       <workItem from="1583347237539" duration="1504000" />
+      <workItem from="1583423082881" duration="6503000" />
+      <workItem from="1583447571837" duration="1455000" />
+      <workItem from="1583475247534" duration="11083000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit for video-slider">
+      <created>1583410700432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583410700432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit for video-slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit for video-slider" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583347187096">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1583347187096" />
-    <state width="1236" height="197" key="GridCell.Tab.0.bottom" timestamp="1583349265071">
+    <state x="183" y="23" key="CommitChangelistDialog2" timestamp="1583495541975">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1236" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583349265071" />
-    <state width="1236" height="197" key="GridCell.Tab.0.center" timestamp="1583349265070">
+    <state x="183" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1583495541975" />
+    <state x="350" y="219" key="EditFileWatcherDialog" timestamp="1583411446276">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1236" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583349265070" />
-    <state width="1236" height="197" key="GridCell.Tab.0.left" timestamp="1583349265066">
+    <state x="350" y="219" key="EditFileWatcherDialog/0.23.1280.777@0.23.1280.777" timestamp="1583411446276" />
+    <state width="1236" height="197" key="GridCell.Tab.0.bottom" timestamp="1583493023659">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1236" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583349265066" />
-    <state width="1236" height="197" key="GridCell.Tab.0.right" timestamp="1583349265071">
+    <state width="1236" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583493023659" />
+    <state width="1236" height="197" key="GridCell.Tab.0.center" timestamp="1583493023658">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1236" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583349265071" />
-    <state x="205" y="73" key="SettingsEditor" timestamp="1583349118631">
+    <state width="1236" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583493023658" />
+    <state width="1236" height="197" key="GridCell.Tab.0.left" timestamp="1583493023657">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="205" y="73" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1583349118631" />
+    <state width="1236" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583493023657" />
+    <state width="1236" height="197" key="GridCell.Tab.0.right" timestamp="1583493023658">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1236" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583493023658" />
+    <state x="205" y="73" key="SettingsEditor" timestamp="1583443492495">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="205" y="73" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1583443492495" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1583410724122">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1583410724122" />
   </component>
 </project>

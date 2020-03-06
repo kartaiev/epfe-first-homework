@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Home from './Home';
 
 const App = () => (
-  <div>
-    <h1>EP/AM</h1>
-  </div>
+  <>
+    <Home />
+  </>
 );
 
 export default App;
