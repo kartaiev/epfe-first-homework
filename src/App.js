@@ -6,8 +6,8 @@ import VideoContainer from './components/VideoContainer/VideoContainer';
 const App = () => {
   return (
     <>
-      <Content />
       <VideoContainer />
+      <Content />
     </>
   );
 };
