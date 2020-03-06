@@ -40,7 +40,8 @@
 
   &__video {
     position: absolute;
-    max-width: 100vw;
+    min-width: 100%;
+    min-height: auto;
     object-fit: cover;
   }
 }
