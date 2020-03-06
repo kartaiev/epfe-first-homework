@@ -17,7 +17,9 @@
     text-align: center;
     text-transform: uppercase;
     color: $color2;
+    font-weight: bold;
     cursor: pointer;
+
     &:hover {
       color: rgba(252, 72, 24, 1);
     }
