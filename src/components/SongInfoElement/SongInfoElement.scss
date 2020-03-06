@@ -1,0 +1,25 @@
+@import '../../palette.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.song-info__container {
+  align-items: center;
+  color: $color6;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  height: 140px;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.song-info__name {
+  font-weight: bold;
+  padding-left: 20px;
+  width: 60%;
+}
+
+.song-info__title {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
