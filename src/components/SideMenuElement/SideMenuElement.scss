@@ -1,0 +1,17 @@
+@import '../../palette.scss';
+
+.side-menu__item {
+  align-items: center;
+  display: flex;
+  height: 25%;
+  justify-content: center;
+}
+
+.side-menu__link {
+  color: $color2;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+}
