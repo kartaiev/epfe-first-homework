@@ -3,8 +3,10 @@ import './Copyright.scss';
 
 const Copyright = () => (
   <div className="Copyright">
-    <h1 className="Copyright__something">Some copyright insides</h1>
-    <span>whatever...</span>
+    <span className="Copyright__name">Made by <span>MDVID</span></span> 
+    <picture>
+      <img className="Copyright__logo" src={require('./images/EP_AM-logo.png')} alt="logo"/>
+    </picture>
   </div>
 );
 
