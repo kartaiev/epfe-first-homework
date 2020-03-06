@@ -6,9 +6,9 @@ import Burger from '../Burger/Burger';
 
 const TourMap = () => {
   return (
-    <div className="tourmap block">
-      <div className="tourmap__inner">
-        <span className="tourmap__title">Tourmap</span>
+    <div className="TourMap block">
+      <div className="TourMap__inner">
+        <span className="TourMap__title">Tourmap</span>
         <Burger />
       </div>
     </div>

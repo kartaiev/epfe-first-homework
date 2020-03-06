@@ -4,9 +4,9 @@ import './burger.scss';
 
 const Burger = () => {
   return (
-    <div className="tourmap__burger">
-      <div className="tourmap__controller" />
-      <div className="tourmap__controller" />
+    <div className="TourMap__Burger Burger">
+      <div className="Burger__controller" />
+      <div className="Burger__controller" />
     </div>
   );
 };
