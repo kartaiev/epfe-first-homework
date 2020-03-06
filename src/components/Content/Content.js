@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Footer from '../Footer/Footer';
+import TourMap from '../TourMap/TourMap';
 
 // // Prototypal Class style
-class Content extends Component {
-  //
-
-  render() {
-    return (
-      <div>
-        <Footer />
-      </div>
-    );
-  }
-}
+const Content = () => {
+  return (
+    <div>
+      <TourMap />
+      <Footer />
+    </div>
+  );
+};
 
 export default Content;
