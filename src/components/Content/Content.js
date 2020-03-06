@@ -1,12 +1,15 @@
 import React from 'react';
+import Header from '../Header/Header';
+import Central from '../Central/Central';
 import Footer from '../Footer/Footer';
-import TourMap from '../TourMap/TourMap';
 
-// // Prototypal Class style
+import './Content.scss';
+
 const Content = () => {
   return (
-    <div>
-      <TourMap />
+    <div className="Content">
+      <Header />
+      <Central />
       <Footer />
     </div>
   );
