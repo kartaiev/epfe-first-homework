@@ -5,9 +5,9 @@
 
 .VideoContainer {
   // position: absolute;
-  z-index: -1;
-  top: 0;
   overflow: hidden;
+  z-index: 1;
+  top: 0;
 }
 
 .slider {
