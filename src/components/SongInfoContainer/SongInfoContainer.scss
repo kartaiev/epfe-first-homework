@@ -1,12 +1,4 @@
-.block {
-  &__wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-
-.song-info {
-  background: transparent;
-  width: 35%;
+.SongInfoContainer {
+  display: flex;
+  justify-content: space-evenly;
 }

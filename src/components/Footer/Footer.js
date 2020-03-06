@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Footer.scss';
 
 import Copyright from '../Copyright/Copyright';
+import SongInfoContainer from '../SongInfoContainer/SongInfoContainer';
 
-// // Prototypal Class style
-class Footer extends Component {
-  render() {
-    return (
-      <div>
-        <Copyright />
-      </div>
-    );
-  }
-}
+const Footer = () => {
+  return (
+    <div className="Footer">
+      <SongInfoContainer />
+      <Copyright />
+    </div>
+  );
+};
 
 export default Footer;
