@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d62ea0c-1c10-43b6-8386-85ea35114bee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/acdc1-loop.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/acdc2-loop.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/acdc3-loop.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/videos/acdc4-loop.webm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/BlackinBlack.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/HighwaytoHell.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/T.N.T.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/Thunderstruck.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583356472123</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="style corrections">
+      <created>1583534401644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583534401644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,17 +103,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="config" />
-    <option name="LAST_COMMIT_MESSAGE" value="config" />
+    <MESSAGE value="style corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="style corrections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583347187096">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1583347187096" />
-    <state x="185" y="23" key="CommitChangelistDialog2" timestamp="1583356974758">
+    <state x="185" y="23" key="CommitChangelistDialog2" timestamp="1583534401405">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="185" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1583356974758" />
+    <state x="185" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1583534401405" />
     <state x="350" y="219" key="EditFileWatcherDialog" timestamp="1583524770492">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -127,9 +143,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="205" y="73" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1583524773174" />
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1583356982241">
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1583534408811">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1583356982241" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1583534408811" />
   </component>
 </project>
