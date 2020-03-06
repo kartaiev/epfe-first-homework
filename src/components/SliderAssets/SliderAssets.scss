@@ -1,8 +1,10 @@
 @import '../../palette.scss';
 
 .slider__assets {
-  width: 50%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .slider__trackname {
