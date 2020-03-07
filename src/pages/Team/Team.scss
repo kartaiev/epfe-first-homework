@@ -1,0 +1,123 @@
+@import '../../palette.scss';
+
+/**RESET STYLES**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/*********/
+
+.SideMenuContainer {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 60px;
+    margin: 0;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+}
+.aside {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    width: 73px;
+    background-color: $color4;
+
+}
+.wrapper {
+    flex-grow: 1;
+}
+
+.team__list {
+    width: 100%;
+    display: flex;
+}
+
+.team__list-item {
+    width: 20%;
+    height: 100vh;
+    background-size: cover;
+
+    &--first {
+        background-image: url("images/pic_4.jpg");
+    }
+    &--second {
+        background-image: url("images/pic_3.jpg");
+    }
+    &--third {
+        background-image: url("images/pic_4.jpg");
+    }
+    &--fourth {
+        background-image: url("images/pic_3.jpg");
+    }
+    &--fifth {
+        background-image: url("images/pic_4.jpg");
+    }
+}
+
+.team__list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team__member {
+    display: block;
+    width: auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: $color2;
+    text-transform: uppercase;
+    
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &--guitar {
+        &:after {
+            background-image: url("./images/guitar.svg");
+        }
+    }
+    &--drumstick {
+        &:after {
+            background-image: url("./images/drumstick.svg");
+        }
+    }
+    &--sing {
+        &:after {
+            background-image: url("./images/sing.svg");
+        }
+    }
+}
