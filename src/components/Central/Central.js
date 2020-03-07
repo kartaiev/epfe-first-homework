@@ -7,7 +7,7 @@ const Central = () => {
   return (
     <div className="Central">
       <SideMenuContainer />
-      <SliderAssets />
+      <SliderAssets trackname="Highway to Front" />
       <div className="Central__invisible-block">
         <SideMenuContainer />
       </div>
