@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './SideMenuElement.scss';
 
 const SideMenuElement = props => {
@@ -11,6 +12,16 @@ const SideMenuElement = props => {
       </NavLink>
     </div>
   );
+};
+
+SideMenuElement.propTypes = {
+  name: PropTypes.string,
+  link: PropTypes.string,
+};
+
+SideMenuElement.defaultProps = {
+  name: 'Name',
+  link: '#',
 };
 
 export default SideMenuElement;
