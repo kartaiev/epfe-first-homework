@@ -17,14 +17,14 @@ const swipePower = (offset, velocity) => {
 //   },
 //   enter: direction => {
 //     return {
-//       x: direction > 0 ? 300 : -300,
+//       x: direction > 0 ? 300 : -300, // '100vw'
 //       opacity: 0,
 //     };
 //   },
 //   exit: direction => {
 //     return {
 //       zIndex: 0,
-//       x: direction < 0 ? 300 : -300,
+//       x: direction < 0 ? 300 : -300, // '100vw'
 //       opacity: 0,
 //     };
 //   },
