@@ -3,7 +3,7 @@ import SideMenuElement from '../SideMenuElement/SideMenuElement';
 import './SideMenuContainer.scss';
 
 const SideMenuContainer = () => {
-  const pages = ['Home', 'About', 'Team', 'Contact'];
+  const pages = ['Home', 'About', 'Team', 'Contacts'];
   return (
     <div className="SideMenuContainer">
       {pages.map(page => (
