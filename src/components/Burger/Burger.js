@@ -4,7 +4,11 @@ import './burger.scss';
 
 const Burger = ({ on, toggle }) => {
   return (
-    <motion.div onTap={toggle} className="TourMap__Burger Burger">
+    <motion.div
+      whileHover={{ scale: 1.2 }}
+      onTap={toggle}
+      className="TourMap__Burger Burger"
+    >
       <motion.div
         animate={
           on

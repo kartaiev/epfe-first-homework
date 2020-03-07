@@ -9,12 +9,13 @@ export default function SliderAssets() {
   return (
     <div className="wrapper">
       <button type="button" className="prev" onClick={() => paginate(-1)}>
-        <svg
+        <motion.svg
           width="23"
           height="33"
           viewBox="0 0 23 33"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          whileHover={{ scale: 1.2 }}
         >
           <path
             d="M21.5 1.5L1.5 16.5L21.5 31.5"
@@ -23,7 +24,7 @@ export default function SliderAssets() {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-        </svg>
+        </motion.svg>
       </button>
       <div className="slider__assets">
         <div className="slider__trackname">Highway to Front</div>
@@ -37,12 +38,13 @@ export default function SliderAssets() {
       </div>
 
       <button type="button" className="next" onClick={() => paginate(1)}>
-        <svg
+        <motion.svg
           width="22"
           height="32"
           viewBox="0 0 22 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          whileHover={{ scale: 1.2 }}
         >
           <path
             d="M1 31L21 16L1 1"
@@ -51,7 +53,7 @@ export default function SliderAssets() {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-        </svg>
+        </motion.svg>
       </button>
     </div>
   );
