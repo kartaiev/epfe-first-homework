@@ -1,8 +1,9 @@
 @import '../../palette.scss';
 .wrapper{
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 5%;
 }
 .slider__assets {
   display: flex;

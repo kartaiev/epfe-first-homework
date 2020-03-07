@@ -1,8 +1,6 @@
 import './VideoContainer.scss';
 import React, { useContext } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-
-import vids from '../../assets/videos';
 import { SliderContext } from '../../contexts/SliderContext';
 
 const swipeConfidenceThreshold = 10000;
@@ -10,22 +8,10 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const variants = {
-  center: {
-    zIndex: 1,
-    opacity: 1,
-  },
-  enter: {
-    opacity: 0,
-  },
-  exit: {
-    zIndex: 0,
-    opacity: 0,
-  },
-};
-
 const VideoContainer = () => {
-  const { slide, direction, index, paginate } = useContext(SliderContext);
+  const { slide, direction, index, paginate, vids, variants } = useContext(
+    SliderContext
+  );
 
   return (
     <div className="VideoContainer slider">
