@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
 import { Route, Switch } from 'react-router-dom';
-import Home from './Pages2/Home/Home';
-import About from './Pages2/About/About';
-import Team from './Pages2/Team/Team';
-import Contacts from './Pages2/Contacts/Contacts';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Team from './Pages/Team/Team';
+import Contacts from './Pages/Contacts/Contacts';
 
 const App = () => {
   return (
