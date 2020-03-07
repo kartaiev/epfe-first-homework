@@ -1,5 +1,9 @@
 @import '../../palette.scss';
-
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .slider__assets {
   display: flex;
   flex-direction: column;
@@ -24,3 +28,21 @@
   cursor: pointer;
   outline: none;
 }
+
+.next,
+.prev {
+  background-color: transparent;
+  border: none;
+  top: calc(50% - 20px);
+  user-select: none;
+  cursor: pointer;
+
+}
+
+//.next {
+//  right: 15%;
+//}
+//
+//.prev {
+//  left: 10%;
+//}

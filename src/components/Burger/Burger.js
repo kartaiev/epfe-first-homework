@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import './burger.scss';
-import TourMap from '../TourMap/TourMap';
 
 const Burger = ({ on, toggle }) => {
   return (
