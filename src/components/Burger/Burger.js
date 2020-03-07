@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import './burger.scss';
+import TourMap from '../TourMap/TourMap';
 
-const Burger = () => {
-  const [on, setOn] = useCycle(false, true);
-
+const Burger = ({ on, toggle }) => {
   return (
-    <motion.div onTap={setOn} className="TourMap__Burger Burger">
+    <motion.div onTap={toggle} className="TourMap__Burger Burger">
       <motion.div
         animate={
           on

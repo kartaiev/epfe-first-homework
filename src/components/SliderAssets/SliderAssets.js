@@ -8,7 +8,7 @@ export default function SliderAssets() {
     <div className="slider__assets">
       <div className="slider__trackname">Highway to Front</div>
       <motion.button
-        whileHover={{ scale: 1.5, x: 13 }}
+        whileHover={{ scale: 1.2, x: 5 }}
         type="button"
         className="slider__button button"
       >

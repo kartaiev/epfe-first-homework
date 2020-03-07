@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { wrap } from '@popmotion/popcorn';
 import vids from '../../assets/videos';
+import arrowLeft from '../../assets/svg-buttons/arrow-left.svg';
+import arrowRight from '../../assets/svg-buttons/arrow-right.svg';
 
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => {
@@ -61,12 +63,40 @@ const VideoContainer = () => {
           }}
         />
       </AnimatePresence>
-      <div className="next" onClick={() => paginate(1)}>
-        ‣
-      </div>
-      <div className="prev" onClick={() => paginate(-1)}>
-        ‣
-      </div>
+      <button className="next" onClick={() => paginate(1)}>
+        <svg
+          width="22"
+          height="32"
+          viewBox="0 0 22 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 31L21 16L1 1"
+            stroke="#F0F0F0"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <button className="prev" onClick={() => paginate(-1)}>
+        <svg
+          width="23"
+          height="33"
+          viewBox="0 0 23 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.5 1.5L1.5 16.5L21.5 31.5"
+            stroke="#F0F0F0"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

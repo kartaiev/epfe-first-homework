@@ -17,11 +17,11 @@
 
   .next,
   .prev {
+    background-color: transparent;
+    border: none;
     top: calc(50% - 20px);
     position: absolute;
     color: $color2;
-    width: 40px;
-    height: 40px;
     user-select: none;
     cursor: pointer;
     font-weight: bold;
@@ -35,7 +35,6 @@
 
   .prev {
     left: 10px;
-    transform: scale(-1);
   }
 
   &__video {

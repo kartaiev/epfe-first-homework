@@ -1,8 +1,7 @@
 import React from 'react';
 import './SideMenuElement.scss';
 
-const SideMenuElement = props => {
-  const { name, link } = props;
+const SideMenuElement = ({ name, link }) => {
   return (
     <div className="SideMenuElement">
       <a className="SideMenuElement__link" href={link}>
