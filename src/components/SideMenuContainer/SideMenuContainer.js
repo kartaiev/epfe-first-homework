@@ -3,12 +3,15 @@ import SideMenuElement from '../SideMenuElement/SideMenuElement';
 import './SideMenuContainer.scss';
 
 const SideMenuContainer = () => {
+  const pages = ['Home', 'About', 'Team', 'Contact'];
   return (
     <div className="SideMenuContainer">
-      <SideMenuElement name="Home" link="#" />
-      <SideMenuElement name="About" link="#" />
-      <SideMenuElement name="Team" link="#" />
-      <SideMenuElement name="Contact" link="#" />
+      {pages.map(page => (
+        <SideMenuElement
+          name={page}
+          link={page === 'Home' ? '/' : page.toLowerCase()}
+        />
+      ))}
     </div>
   );
 };

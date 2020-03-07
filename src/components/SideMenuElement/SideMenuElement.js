@@ -1,13 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './SideMenuElement.scss';
 
 const SideMenuElement = props => {
   const { name, link } = props;
   return (
     <div className="SideMenuElement">
-      <a className="SideMenuElement__link" href={link}>
+      <NavLink to={link} className="SideMenuElement__link">
         {name}
-      </a>
+      </NavLink>
     </div>
   );
 };
