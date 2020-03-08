@@ -2,24 +2,23 @@
 
 .TourMap {
   width: 100%;
-
-  &__inner {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+  background: $color4;
+  &__logo {
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
   }
 
-  &__title {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color2;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      color: rgba(252, 72, 24, 1);
-    }
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto;
+    background-image: url('./images/TourMap_bg.svg');
+    background-position: center center;
+    background-size: cover;
+  }
+  &__program {
+    list-style-type: none;
+    padding: 0;
   }
 }

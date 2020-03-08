@@ -1,12 +1,12 @@
 import React from 'react';
 import './Header.scss';
 
-import TourMap from '../TourMap/TourMap';
+import TourMapController from '../TourMapController/TourMapController';
 
 const Header = () => {
   return (
     <div className="Header">
-      <TourMap />
+      <TourMapController />
     </div>
   );
 };
