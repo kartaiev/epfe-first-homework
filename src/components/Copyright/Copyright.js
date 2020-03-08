@@ -4,10 +4,11 @@ import './Copyright.scss';
 
 const Copyright = () => (
   <div className="Copyright">
-    <span className="Copyright__author">
-      Made by <span className="Copyright__name">MDVID</span>
-    </span>
-    <div className="Logo__wrapper">
+    <div className="Copyright__author">
+      Made by
+      <span className="Copyright__name">MDVID</span>
+    </div>
+    <div className="Logo-wrapper">
       <Logo />
     </div>
   </div>
