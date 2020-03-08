@@ -7,7 +7,9 @@ const Copyright = () => (
     <span className="Copyright__author">
       Made by <span className="Copyright__name">MDVID</span>
     </span>
-   <Logo />
+    <div className="Logo__wrapper">
+      <Logo />
+    </div>
   </div>
 );
 
