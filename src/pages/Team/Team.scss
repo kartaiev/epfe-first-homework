@@ -53,6 +53,10 @@ a {
   display: flex;
   width: 100%;
   position: relative;
+
+  &:hover {
+    width: 40%;
+  }
 }
 
 .team__list-item {
@@ -167,23 +171,22 @@ a {
 
 .overlay {
   position: fixed;
-  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: hsla(0, 0%, 0%, 0.8);
-  transform: translateY(-100%);
+  transform: translateX(-100%);
 }
 
 .overlay-slide-down {
   transition: all 0.4s ease-in-out;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .overlay-slide-up {
   transition: all 0.8s ease-in-out;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
 }
 
 @keyframes slide-in-nav-item {
@@ -199,26 +202,11 @@ a {
 
 @keyframes slide-in-nav-item-reverse {
   from {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
-@media (max-width: 640px) {
-  nav ul li a {
-    font-size: 11px;
-  }
-  nav li a:after {
-    font-size: 0.6rem;
-  }
-  .open-overlay {
-    right: 1rem;
-  }
-  nav li a:before {
-    width: 15px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
