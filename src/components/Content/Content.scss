@@ -1,0 +1,9 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // TODO: Remake later for appropriate margins
+  height: calc(100vh - 100px);
+  margin: 50px;
+}

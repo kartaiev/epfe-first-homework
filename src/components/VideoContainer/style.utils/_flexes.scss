@@ -1,0 +1,6 @@
+@mixin center($fd: row) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: center;
+  align-items: center;
+}

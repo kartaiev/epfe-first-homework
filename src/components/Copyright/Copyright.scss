@@ -1,0 +1,57 @@
+@import '../../palette.scss';
+
+.Copyright {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.Copyright__author {
+  position: relative;
+
+  display: inline-block;
+  padding: 0 15px 0 110px;
+
+  text-transform: uppercase;
+  color: $color1;
+  font-weight: bold;
+
+  line-height: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+
+    background-color: hsla(0%, 0%, 94%, 1);
+  }
+
+  &::before {
+    top: 50%;
+    left: 0;
+
+    width: 95px;
+    height: 2px;
+  }
+
+  &::after {
+    top: 0;
+    right: 0;
+
+    width: 2px;
+    height: 100%;
+  }
+}
+
+.Copyright__name {
+  font-weight: bold;
+  color: $color2;
+}
+
+.Logo__wrapper {
+  margin-left: 15px;
+}
+
+

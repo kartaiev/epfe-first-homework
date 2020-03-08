@@ -11,6 +11,12 @@
 # production
 /build
 
+# IntelliJ Idea files
+.idea/
+
+# VSCode files
+.vscode/
+
 # misc
 .DS_Store
 .env.local

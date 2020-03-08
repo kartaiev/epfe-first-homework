@@ -1,0 +1,25 @@
+@import '../../palette.scss';
+
+.slider__assets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slider__trackname {
+  font-size: 5em;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: $color2;
+}
+.slider__button {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color3;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}

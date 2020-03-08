@@ -1,0 +1,28 @@
+@import '../../palette.scss';
+
+.TourMap {
+  width: 100%;
+
+  &__inner {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    // padding: 40px 20px 40px 0;
+  }
+
+  &__title {
+    width: 100%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: $color2;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(252, 72, 24, 1);
+    }
+  }
+
+}

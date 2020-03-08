@@ -1,0 +1,8 @@
+.Central {
+  display: flex;
+  justify-content: space-between;
+
+  &__invisible-block {
+    visibility: hidden;
+  }
+}

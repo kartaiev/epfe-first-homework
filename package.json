@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@popmotion/popcorn": "latest",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "depcheck": "^0.9.2",
+    "framer-motion": "^1.9.0",
     "node-sass": "^4.13.1",
+    "popmotion": "^8.7.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "react-router-dom": "^5.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,7 +48,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.19.1",
-    "react-router-dom": "^5.1.2"
+    "prettier": "^1.19.1"
   }
 }
