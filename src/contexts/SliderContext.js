@@ -9,15 +9,32 @@ export const SliderProvider = ({ children }) => {
   const index = wrap(0, vids.length, slide);
 
   const variants = {
+    enter: {
+      opacity: 0,
+    },
     center: {
       zIndex: 1,
       opacity: 1,
     },
+    exit: {
+      zIndex: 0,
+      opacity: 0,
+    },
+  };
+
+  const titleVariants = {
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
     enter: {
+      x: direction > 0 ? 1000 : -1000,
       opacity: 0,
     },
     exit: {
       zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
       opacity: 0,
     },
   };
@@ -28,7 +45,15 @@ export const SliderProvider = ({ children }) => {
 
   return (
     <SliderContext.Provider
-      value={{ variants, index, slide, direction, vids, paginate }}
+      value={{
+        variants,
+        titleVariants,
+        index,
+        slide,
+        direction,
+        vids,
+        paginate,
+      }}
     >
       {children}
     </SliderContext.Provider>

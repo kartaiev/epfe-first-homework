@@ -28,7 +28,7 @@ const VideoContainer = () => {
           initial="enter"
           animate="center"
           exit="exit"
-          transition={{ type: 'tween', ease: 'easeIn', duration: 1 }}
+          transition={{ opacity: { duration: 0.2 } }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}

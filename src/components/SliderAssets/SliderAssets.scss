@@ -4,7 +4,10 @@
   display: flex;
   justify-content: space-between;
   padding-left: 5%;
+  overflow: hidden;
 }
+
+
 .slider__assets {
   display: flex;
   flex-direction: column;

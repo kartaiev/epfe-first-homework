@@ -5,7 +5,9 @@ import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
 
 export default function SliderAssets() {
-  const { paginate, index, direction, variants } = useContext(SliderContext);
+  const { paginate, index, direction, titleVariants, slide } = useContext(
+    SliderContext
+  );
 
   const trackNames = [
     'Highway to Front',
@@ -34,29 +36,43 @@ export default function SliderAssets() {
           />
         </motion.svg>
       </button>
-      <div className="slider__assets">
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.div
-            variants={variants}
-            custom={direction}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ type: 'tween', ease: 'easeIn', duration: 1 }}
-            className="slider__trackname"
-          >
-            {trackNames[index]}
-          </motion.div>
-        </AnimatePresence>
+      <motion.div
+        className="slider__assets"
+        variants={titleVariants}
+        key={slide}
+        custom={direction}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{
+          type: 'spring',
+          mass: 2,
+          stiffness: 200,
+          damping: 200,
+        }}
+      >
+        <div className="slider__trackname">{trackNames[index]}</div>
 
         <motion.button
           whileHover={{ scale: 1.2, x: 5 }}
+          variants={titleVariants}
+          key={slide}
+          custom={direction}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            type: 'spring',
+            mass: 2,
+            stiffness: 200,
+            damping: 200,
+          }}
           type="button"
           className="slider__button button"
         >
           Play
         </motion.button>
-      </div>
+      </motion.div>
 
       <button type="button" className="next" onClick={() => paginate(1)}>
         <motion.svg
