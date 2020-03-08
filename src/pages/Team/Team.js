@@ -13,31 +13,31 @@ const Team = () => {
       <div className="wrapper" id="overlay">
         <nav className="team">
           <ul className="team__list">
-            <li className="team__list-item team__list-item--first">
+            <li className="team__list-item team__list-item--first" id="first">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--guitar">Max</span>
               </a>
             </li>
-            <li className="team__list-item team__list-item--second">
+            <li className="team__list-item team__list-item--second" id="second">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--drumstick">
                   Dima
                 </span>
               </a>
             </li>
-            <li className="team__list-item team__list-item--third">
+            <li className="team__list-item team__list-item--third" id="third">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--sing">Vlad</span>
               </a>
             </li>
-            <li className="team__list-item team__list-item--fourth">
+            <li className="team__list-item team__list-item--fourth" id="fourth">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--drumstick">
                   Iryna
                 </span>
               </a>
             </li>
-            <li className="team__list-item team__list-item--fifth">
+            <li className="team__list-item team__list-item--fifth" id="fifth">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--guitar">Dan</span>
               </a>
