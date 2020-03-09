@@ -1,6 +1,10 @@
 @import '../../palette.scss';
 @import '../../reset_module.scss';
 
+body {
+  background-color: $color4;
+}
+
 .MemberPage {
   height: calc(100vh - 100px);
   margin: 50px;
