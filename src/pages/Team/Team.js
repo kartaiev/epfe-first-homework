@@ -2,6 +2,7 @@ import React from 'react';
 import './Team.scss';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Logo from '../../components/Logo/Logo';
+import MemberCard from '../../components/MemberCard';
 
 const Team = () => {
   return (
@@ -15,6 +16,7 @@ const Team = () => {
       <div className="wrapper" id="overlay">
         <nav className="team">
           <ul className="team__list">
+            <MemberCard className="team__member" id={1} />
             <li className="team__list-item team__list-item--first" id="first">
               <a className="team__list-link" href="#">
                 <span className="team__member team__member--guitar">Max</span>

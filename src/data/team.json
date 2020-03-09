@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Max",
+    "imageFile": "malcolm_young.jpg",
+    "instrument": "guitar"
+  },
+  {
+    "id": 2,
+    "name": "Dima",
+    "imageFile": "angus_young_.jpg",
+    "instrument": "drumstick"
+  }
+]
