@@ -1,51 +1,49 @@
-import React from 'react';
-import './Team.scss';
+import React, { useEffect } from 'react';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Logo from '../../components/Logo/Logo';
-import MemberCard from '../../components/MemberCard';
+import MemberCard from '../../components/MemberCard/MemberCard';
+
+import './Team.scss';
+import './TeamAnimations.scss';
+
+import team from '../../data/team.json';
+
+const appearAnimation = () => {
+  console.log('Component mounted');
+};
+
+const disappearAnimation = () => {
+  console.log('Component will unmounted');
+};
 
 const Team = () => {
+  // ComponentDidMount
+  useEffect(() => appearAnimation(), []);
+
+  // ComponentWillUnmount
+  useEffect(() => () => disappearAnimation(), []);
+
   return (
-    <div className="block">
-      <aside className="aside">
+    <div className="TeamPage block">
+      <aside className="TeamPage__aside aside">
         <div className="aside__logo-container">
           <Logo />
         </div>
         <SideMenuContainer />
       </aside>
-      <div className="wrapper" id="overlay">
-        <nav className="team">
-          <ul className="team__list">
-            <MemberCard className="team__member" id={1} />
-            <li className="team__list-item team__list-item--first" id="first">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--guitar">Max</span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--second" id="second">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--drumstick">
-                  Dima
-                </span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--third" id="third">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--sing">Vlad</span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--fourth" id="fourth">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--drumstick">
-                  Iryna
-                </span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--fifth" id="fifth">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--guitar">Dan</span>
-              </a>
-            </li>
+      <div className="TeamPage__wrapper" id="overlay">
+        <nav className="Team">
+          <ul className="Team__list">
+            {team.map(member => (
+              <MemberCard
+                className="Team__member"
+                key={member.id}
+                id={member.id}
+                name={member.name}
+                image={member.image}
+                instrument={member.instrument}
+              />
+            ))}
           </ul>
         </nav>
       </div>

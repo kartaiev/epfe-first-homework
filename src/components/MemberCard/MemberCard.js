@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 import './MemberCard.scss';
 
 const MemberCard = props => {
-  const { id } = props;
+  const { id, name, instrument } = props;
 
   return (
-    <li className="MemberCard" id={id}>
+    <li className={`MemberCard MemberCard--${id}`} id={id}>
       <a className="MemberCard__link" href="#">
-        <span className="MemberCard__name">Dima</span>
+        <span className={`MemberCard__name MemberCard__name--${instrument}`}>
+          {name}
+        </span>
       </a>
     </li>
   );
@@ -17,10 +19,14 @@ const MemberCard = props => {
 
 MemberCard.propTypes = {
   id: PropTypes.number,
+  name: PropTypes.string,
+  instrument: PropTypes.string,
 };
 
 MemberCard.defaultProps = {
-  id: '1',
+  id: 1,
+  name: 'Max',
+  instrument: 'guitar',
 };
 
 export default MemberCard;

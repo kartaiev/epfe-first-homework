@@ -1,14 +1,27 @@
 [
   {
     "id": 1,
-    "name": "Max",
-    "imageFile": "malcolm_young.jpg",
+    "name": "Maxym",
     "instrument": "guitar"
   },
   {
     "id": 2,
-    "name": "Dima",
-    "imageFile": "angus_young_.jpg",
-    "instrument": "drumstick"
+    "name": "Dmytro",
+    "instrument": "drums"
+  },
+  {
+    "id": 3,
+    "name": "Vladimir",
+    "instrument": "vocal"
+  },
+  {
+    "id": 4,
+    "name": "Iryna",
+    "instrument": "drums"
+  },
+  {
+    "id": 5,
+    "name": "Denys",
+    "instrument": "guitar"
   }
 ]
