@@ -9,10 +9,10 @@ import './Content.scss';
 const Content = () => {
   return (
     <div className="Content">
-      {/* <Header />
+      <Header />
       <Central />
-      <Footer /> */}
-      <TourMap />
+      <Footer />
+      {/* <TourMap /> */}
     </div>
   );
 };
