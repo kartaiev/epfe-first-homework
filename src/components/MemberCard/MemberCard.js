@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './MemberCard.scss';
 
 const MemberCard = props => {
@@ -8,11 +9,11 @@ const MemberCard = props => {
 
   return (
     <li className={`MemberCard MemberCard--${id}`} id={id}>
-      <a className="MemberCard__link" href="#">
+      <Link to={`Member${id}`} className="MemberCard__link">
         <span className={`MemberCard__name MemberCard__name--${instrument}`}>
           {name}
         </span>
-      </a>
+      </Link>
     </li>
   );
 };

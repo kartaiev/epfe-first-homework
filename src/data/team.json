@@ -2,26 +2,31 @@
   {
     "id": 1,
     "name": "Maxym",
+    "image": "images/malcolm_young.jpg",
     "instrument": "guitar"
   },
   {
     "id": 2,
     "name": "Dmytro",
+    "image": "images/malcolm_young.jpg",
     "instrument": "drums"
   },
   {
     "id": 3,
     "name": "Vladimir",
+    "image": "images/malcolm_young.jpg",
     "instrument": "vocal"
   },
   {
     "id": 4,
     "name": "Iryna",
+    "image": "images/malcolm_young.jpg",
     "instrument": "drums"
   },
   {
     "id": 5,
     "name": "Denys",
+    "image": "images/malcolm_young.jpg",
     "instrument": "guitar"
   }
 ]
