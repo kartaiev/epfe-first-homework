@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import SongInfoElement from '../SongInfoElement/SongInfoElement';
 import SongNumber from '../SongNumber/SongNumber';
 import './SongInfoContainer.scss';
+import { SliderContext } from '../../contexts/SliderContext';
 
 const SongInfoContainer = props => {
-  const { album, name, currentNumber, totalNumber } = props;
+  const { album, name, totalNumber } = props;
+  const { index } = useContext(SliderContext);
 
   return (
     <div className="SongInfoContainer">
       <SongInfoElement name={album} title="Album" />
       <SongInfoElement name={name} title="Track" />
-      <SongNumber current={currentNumber} total={totalNumber} />
+      <SongNumber current={index + 1} total={totalNumber} />
     </div>
   );
 };
@@ -19,14 +21,12 @@ const SongInfoContainer = props => {
 SongInfoContainer.propTypes = {
   album: PropTypes.string,
   name: PropTypes.string,
-  currentNumber: PropTypes.number,
   totalNumber: PropTypes.number,
 };
 
 SongInfoContainer.defaultProps = {
   album: 'Girls got rhythm',
   name: 'Highway to hell',
-  currentNumber: 1,
   totalNumber: 4,
 };
 

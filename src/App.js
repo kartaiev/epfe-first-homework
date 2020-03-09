@@ -7,7 +7,6 @@ import Team from './pages/Team/Team';
 import Member from './pages/Member/Member';
 import { SliderProvider } from './contexts/SliderContext';
 
-
 const App = () => {
   // // Commented for development purposes
   // // Remove comment when ready for production
