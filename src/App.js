@@ -9,30 +9,32 @@ import { SliderProvider } from './contexts/SliderContext';
 
 
 const App = () => {
-  const fadeOut = target => {
-    const elem = target;
-    const fadeEffect = setInterval(() => {
-      if (!elem.style.opacity) {
-        elem.style.opacity = 1;
-      }
+  // // Commented for development purposes
+  // // Remove comment when ready for production
+  // const fadeOut = target => {
+  //   const elem = target;
+  //   const fadeEffect = setInterval(() => {
+  //     if (!elem.style.opacity) {
+  //       elem.style.opacity = 1;
+  //     }
 
-      if (elem.style.opacity > 0) {
-        elem.style.opacity -= 0.1;
-      } else {
-        clearInterval(fadeEffect);
-        elem.remove();
-      }
-    }, 50);
-  };
+  //     if (elem.style.opacity > 0) {
+  //       elem.style.opacity -= 0.1;
+  //     } else {
+  //       clearInterval(fadeEffect);
+  //       elem.remove();
+  //     }
+  //   }, 50);
+  // };
 
-  useEffect(() => {
-    const element = document.querySelector('.loader');
-    if (element) {
-      setTimeout(() => {
-        fadeOut(element);
-      }, 2000);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const element = document.querySelector('.loader');
+  //   if (element) {
+  //     setTimeout(() => {
+  //       fadeOut(element);
+  //     }, 2000);
+  //   }
+  // }, []);
 
   return (
     <>
