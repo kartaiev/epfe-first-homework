@@ -1,0 +1,11 @@
+.MemberPage {
+  height: calc(100vh - 100px);
+  margin: 50px;
+}
+
+.MemberPage__copyright-wrapper {
+  position: fixed;
+
+  bottom: 50px;
+  right: 50px;
+}
