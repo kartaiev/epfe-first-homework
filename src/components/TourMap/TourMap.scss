@@ -27,7 +27,19 @@
 }
 .on-screen {
   top: 0;
+  opacity: 1;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
 }
 .off-screen {
   top: -1000px;
+  opacity: 0;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
 }
