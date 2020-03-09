@@ -1,8 +1,7 @@
 @import '../../palette.scss';
 
 .Burger {
-  display: grid;
-  align-content: space-around;
+  position: relative;
   width: 30px;
   cursor: pointer;
   &:hover > .Burger__controller {
@@ -11,7 +10,75 @@
 }
 
 .Burger__controller {
+  position: relative;
   height: 2px;
   width: 100%;
   background-color: $color2;
+}
+
+.is-close:first-child {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+.is-close:last-child {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+.is-open:first-child {
+  position: absolute;
+  top: 10px;
+  left: -2px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background-color: $color3;
+  &:hover {
+    background-color: #fff;
+  }
+}
+.is-open:last-child {
+  position: absolute;
+  top: 10px;
+  left: -2px;
+  transition: 1s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  background-color: $color3;
+  
 }

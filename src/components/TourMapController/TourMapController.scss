@@ -17,6 +17,11 @@
     color: $color2;
     font-weight: bold;
     cursor: pointer;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
 
     &:hover {
       color: rgba(252, 72, 24, 1);

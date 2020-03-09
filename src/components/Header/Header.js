@@ -4,16 +4,10 @@ import './Header.scss';
 
 import TourMapController from '../TourMapController/TourMapController';
 
-const Header = () => {
+const Header = ({ state, toogle }) => {
   return (
     <div className="Header">
-      <TourMapController />
-      {/* <Toogle>
-        {' '}
-        {({ active, toogle }) => (
-          <TourMapController active={active} toogle={toogle} />
-        )}
-      </Toogle> */}
+      <TourMapController state={state} toogle={toogle} />
     </div>
   );
 };

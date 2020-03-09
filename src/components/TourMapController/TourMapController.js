@@ -4,12 +4,22 @@ import './TourMapController.scss';
 
 import Burger from '../Burger/Burger';
 
-const TourMapController = () => {
+const TourMapController = ({ state, toogle }) => {
   return (
     <div className="TourMapController">
       <div className="TourMapController__inner">
-        <span className="TourMapController__text">Tourmap</span>
-        <Burger />
+        {state && (
+          <span className="TourMapController__text is-checked" onClick={toogle}>
+            Close
+          </span>
+        )}
+        {!state && (
+          <span className="TourMapController__text is-checked" onClick={toogle}>
+            Tourmap
+          </span>
+        )}
+
+        <Burger state={state} toogle={toogle} />
       </div>
     </div>
   );
