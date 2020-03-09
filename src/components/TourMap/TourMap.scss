@@ -11,7 +11,7 @@
   &__logo {
     display: block;
     text-align: center;
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
   }
 
@@ -21,6 +21,7 @@
     background-image: url('./images/TourMap_bg.svg');
     background-position: center center;
     background-size: cover;
+    margin: 0 auto;
   }
   &__program {
     list-style-type: none;
@@ -29,7 +30,6 @@
 }
 .on-screen {
   top: 0;
-  opacity: 1;
   transition: 1.5s;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
@@ -38,7 +38,6 @@
 }
 .off-screen {
   top: -1000px;
-  opacity: 0;
   transition: 1.5s;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
