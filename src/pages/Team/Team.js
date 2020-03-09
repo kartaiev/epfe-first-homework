@@ -9,31 +9,34 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Team = () => {
   const names = ['Max', 'Dima', 'Vlad', 'Iryna', 'Dan'];
 
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
+  const component = {
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 0.3,
-        when: 'beforeChildren',
-        staggerChildren: 0.1,
-      },
-      exit: { opacity: 1, scale: 0 },
     },
+    exit: { opacity: 0 },
   };
 
   const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
+    hidden: { y: '-100vh', opacity: 0 },
+    visible: i => ({
       y: 0,
       opacity: 1,
-    },
-    exit: { y: 20, opacity: 0 },
+      transition: {
+        delay: i * 0.1,
+      },
+    }),
+    exit: i => ({
+      y: '-100vh',
+      opacity: 0,
+      transition: {
+        delay: i * 0.1,
+      },
+    }),
   };
 
   return (
-    <div className="Team">
+    <motion.div className="Team" variants={component} exit="exit">
       <aside className="aside">
         <Logo />
         <div className="SideMenuContainer-wrapper">
@@ -41,22 +44,22 @@ const Team = () => {
         </div>
       </aside>
       <div className="Team__wrapper">
-        <motion.ul
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          className="Team-list"
-        >
+        <ul className="Team-list">
           {names.map((name, i) => {
             return (
-              <Link to={name} className="Team-list__link">
+              <Link key={name} to={`/team/${name}`} className="Team-list__link">
                 <motion.li
-                  // initial={{ rotateY: -180 }}
-                  // animate={{ rotateY: 0 }}
-                  // exit={{ rotateY: -180 }}
-                  variants={item}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow:
+                      '-4px 0px 5px 0px rgba(0,0,0,0.75), 4px 0px 5px 0px rgba(0,0,0,0.75)',
+                  }}
+                  custom={i}
                   key={name}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  variants={item}
                   className="Team-list__item"
                   style={{ backgroundImage: `url(${teamPics[i]})` }}
                 >
@@ -67,9 +70,9 @@ const Team = () => {
               </Link>
             );
           })}
-        </motion.ul>
+        </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
