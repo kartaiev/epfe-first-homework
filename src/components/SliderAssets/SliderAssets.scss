@@ -1,16 +1,15 @@
 @import '../../palette.scss';
 
 .SliderAssets {
-  // width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding-left: 5%;
   overflow: hidden;
 
   &__controls {
     top: calc(50% - 20px);
-    margin: 30px;
+    margin: 50px;
     cursor: pointer;
   }
 
