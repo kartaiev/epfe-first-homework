@@ -16,6 +16,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 /*********/
 .SideMenuContainer-wrapper {
   position: absolute;
@@ -28,9 +29,59 @@ a {
   margin: 0;
 }
 
-.block {
+.Team {
   display: flex;
   width: 100%;
+
+  &__wrapper {
+    flex-grow: 1;
+
+    .Team-list {
+      display: flex;
+      width: 100%;
+      position: relative;
+
+      &__link {
+        width: 20%;
+        height: 100vh;
+      }
+
+      &__item {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+      }
+
+      &__name {
+        display: block;
+        width: auto;
+        height: 40px;
+        font-size: 35px;
+        font-weight: 300;
+        color: $color2;
+        text-transform: uppercase;
+
+        &:hover::after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
 }
 
 .aside {
@@ -41,84 +92,23 @@ a {
   width: 73px;
   background-color: $color4;
 }
-.wrapper {
-  flex-grow: 1;
-}
 
-.team__list {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
 
-.team__list-item {
-  width: 20%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
 
-  &--first {
-    background-image: url('images/malcolm_young.jpg');
-  }
-  &--second {
-    background-image: url('images/angus_young_.jpg');
-  }
-  &--third {
-    background-image: url('images/angus_young.jpg');
-  }
-  &--fourth {
-    background-image: url('images/drummer_lady.png');
-  }
-  &--fifth {
-    background-image: url('images/axl_rose.jpg');
-  }
-}
 
-.team__list-link {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 
-.team__member {
-  display: block;
-  width: auto;
-  height: 40px;
-  font-size: 35px;
-  font-weight: 300;
-  color: $color2;
-  text-transform: uppercase;
-
-  &:hover::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &--guitar {
-    &:after {
-      background-image: url('./images/guitar.svg');
-    }
-  }
-  &--drumstick {
-    &:after {
-      background-image: url('./images/drumstick.svg');
-    }
-  }
-  &--sing {
-    &:after {
-      background-image: url('./images/sing.svg');
-    }
-  }
-}
-
+//&--guitar {
+//  &:after {
+//    background-image: url('../../assets/images/guitar.svg');
+//  }
+//}
+//&--drumstick {
+//  &:after {
+//    background-image: url('../../assets/images/drumstick.svg');
+//  }
+//}
+//&--sing {
+//  &:after {
+//    background-image: url('../../assets/images/sing.svg');
+//  }
+//}
