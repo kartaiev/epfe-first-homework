@@ -1,24 +1,24 @@
-.slide-in-nav-item {
-  animation: slide-in-nav-item 0.4s linear 1 0.2s both;
+.slide-in-nav-item-delay-0 {
+  animation: slide-in-nav-item 0.3s ease-in-out 1 0.1s both;
 }
 
 .slide-in-nav-item-delay-1 {
-  animation: slide-in-nav-item 0.4s linear 1 0.4s both;
+  animation: slide-in-nav-item 0.3s ease-in-out 1 0.2s both;
 }
 
 .slide-in-nav-item-delay-2 {
-  animation: slide-in-nav-item 0.4s linear 1 0.6s both;
+  animation: slide-in-nav-item 0.3s ease-in-out 1 0.3s both;
 }
 
 .slide-in-nav-item-delay-3 {
-  animation: slide-in-nav-item 0.4s linear 1 0.8s both;
+  animation: slide-in-nav-item 0.3s ease-in-out 1 0.4s both;
 }
 
 .slide-in-nav-item-delay-4 {
-  animation: slide-in-nav-item 0.4s linear 1 1s both;
+  animation: slide-in-nav-item 0.3s ease-in-out 1 0.5s both;
 }
 
-.slide-in-nav-item-reverse {
+.slide-in-nav-item-delay-0-reverse {
   animation: slide-in-nav-item-reverse 0.3s linear 1 0.5s both;
 }
 
@@ -60,10 +60,12 @@
 
 @keyframes slide-in-nav-item {
   from {
+    opacity: 0.2;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
   to {
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
