@@ -7,7 +7,9 @@ const Team = () => {
   return (
     <div className="block">
       <aside className="aside">
-        <Logo />
+        <div className="aside__logo-container">
+          <Logo />
+        </div>
         <SideMenuContainer />
       </aside>
       <div className="wrapper" id="overlay">

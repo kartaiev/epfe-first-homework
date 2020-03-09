@@ -17,9 +17,8 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  width: 60px;
-  margin: 0;
+.aside__logo-container {
+  margin: 0 15px;
 }
 
 .block {
@@ -31,7 +30,7 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  width: 73px;
+  // width: 73px;
   background-color: $color4;
 }
 .wrapper {
