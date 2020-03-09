@@ -11,12 +11,12 @@ const App = () => {
   return (
     <>
       <Switch>
-        <SliderProvider>
-          <Route path="/" component={Home} exact />
-        </SliderProvider>
         <Route path="/about" component={About} />
         <Route path="/team" component={Team} />
         <Route path="/contacts" component={Contacts} />
+        <SliderProvider>
+          <Route path="/" component={Home} exact />
+        </SliderProvider>
       </Switch>
     </>
   );
