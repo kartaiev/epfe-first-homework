@@ -1,12 +1,13 @@
 import React from 'react';
+
 import './Header.scss';
 
-import TourMap from '../TourMap/TourMap';
+import TourMapController from '../TourMapController/TourMapController';
 
-const Header = () => {
+const Header = ({ state, toogle }) => {
   return (
     <div className="Header">
-      <TourMap />
+      <TourMapController state={state} toogle={toogle} />
     </div>
   );
 };

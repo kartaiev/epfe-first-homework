@@ -2,11 +2,16 @@ import React from 'react';
 
 import './burger.scss';
 
-const Burger = () => {
-  return (
-    <div className="TourMap__Burger Burger">
-      <div className="Burger__controller" />
-      <div className="Burger__controller" />
+const Burger = ({ state, toogle }) => {
+  return state ? (
+    <div className="TourMap__Burger Burger" onClick={toogle}>
+      <div className="Burger__controller is-open" />
+      <div className="Burger__controller is-open" />
+    </div>
+  ) : (
+    <div className="TourMap__Burger Burger" onClick={toogle}>
+      <div className="Burger__controller is-close" />
+      <div className="Burger__controller is-close" />
     </div>
   );
 };

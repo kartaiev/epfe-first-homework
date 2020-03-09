@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import './App.scss';
 import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/Home';
+
 import Team from './pages/Team/Team';
 import Member from './pages/Member/Member';
 import { SliderProvider } from './contexts/SliderContext';
+
 
 const App = () => {
   const fadeOut = target => {

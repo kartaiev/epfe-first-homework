@@ -1,0 +1,7 @@
+{
+  "datestyle": "medium",
+  "day": "2-digit",
+  "year": "numeric",
+  "month": "short",
+  "timezone": "UTC"
+}

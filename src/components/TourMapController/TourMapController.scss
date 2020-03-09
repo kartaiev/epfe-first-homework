@@ -1,0 +1,25 @@
+@import '../../palette.scss';
+
+.TourMapController {
+  width: 100%;
+
+  &__inner {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color2;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(252, 72, 24, 1);
+    }
+  }
+}
