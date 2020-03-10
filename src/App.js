@@ -39,7 +39,7 @@ const App = () => {
     <>
       <Switch>
         <Route path="/team" component={Team} />
-        <Route path="/member" component={Member} />
+        <Route path="/member/:id" component={Member} />
         <SliderProvider>
           <Route path="/" component={Home} exact />
         </SliderProvider>
