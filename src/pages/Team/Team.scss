@@ -19,11 +19,7 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
-<<<<<<< HEAD
   background-color: $main-black;
-=======
-  background-color: $color4;
->>>>>>> develop
 }
 .TeamPage__wrapper {
   flex-grow: 1;
@@ -34,7 +30,6 @@
   width: 100%;
   position: relative;
 
-<<<<<<< HEAD
   &:hover {
     width: 40%;
   }
@@ -190,9 +185,5 @@
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-=======
-  // &:hover {
-  // width: 40%;
-  // }
->>>>>>> develop
+
 }

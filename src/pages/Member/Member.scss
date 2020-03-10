@@ -2,13 +2,13 @@
 @import '../../reset_module.scss';
 
 body {
-  background-color: $color4;
+  background-color: $main-black;
 }
 
 .MemberPage {
   height: calc(100vh - 100px);
   margin: 50px;
-  background-image: url(../../images/malcolm_young.jpg);
+  background-image: url('../../assets/images/malcolm_young.jpg');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
@@ -17,7 +17,7 @@ body {
 .MemberPage__wrapper {
   width: 60%;
   padding: 70px 0 0 150px;
-  color: $color2;
+  color: $main-white;
 }
 
 .MemberPage__image {
@@ -30,7 +30,7 @@ body {
 .MemberPage__title {
   font-size:  4rem;
   font-weight: 700;
-  color: $color2;
+  color:$main-white;
   text-transform: uppercase;
 }
 
@@ -38,7 +38,7 @@ body {
   padding-bottom: 40px;
   font-size: 1.5rem;
   font-weight: 500;
-  color: $color3;
+  color: $main-orangered;
   text-transform: uppercase;
 }
 
