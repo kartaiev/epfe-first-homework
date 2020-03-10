@@ -25,7 +25,7 @@ const teamMembers = team.map(member => (
 const appearAnimation = () => {
   const members = Array.from(teamListRef.current.children);
   members.forEach((member, i) => {
-    member.classList.add('Team__member', `Team__member--delay-${i}`);
+    member.classList.add(`Team__member--delay-${i}`);
   });
 };
 

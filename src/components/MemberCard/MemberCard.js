@@ -8,7 +8,7 @@ const MemberCard = props => {
   const { id, name, instrument } = props;
 
   return (
-    <li className={`MemberCard MemberCard--${id}`} id={id}>
+    <li className={`Team__member MemberCard MemberCard--${id}`} id={id}>
       <Link to={`Member${id}`} className="MemberCard__link">
         <span className={`MemberCard__name MemberCard__name--${instrument}`}>
           {name}
