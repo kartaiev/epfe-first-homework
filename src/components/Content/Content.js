@@ -28,3 +28,4 @@ const Content = ({ state, toogle }) => {
 };
 
 export default Content;
+

@@ -5,7 +5,7 @@
   width: 30px;
   cursor: pointer;
   &:hover > .Burger__controller {
-    background-color: $color3;
+    background-color: $main-orangered;
   }
 }
 
@@ -13,7 +13,7 @@
   position: relative;
   height: 2px;
   width: 100%;
-  background-color: $color2;
+  background-color: $main-white;
 }
 
 .is-close:first-child {
@@ -60,7 +60,7 @@
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  background-color: $color3;
+  background-color: $main-orangered;
 }
 .is-open:last-child {
   position: absolute;
@@ -76,5 +76,5 @@
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-  background-color: $color3;
+  background-color: $main-orangered;
 }

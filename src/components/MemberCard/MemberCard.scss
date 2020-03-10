@@ -5,22 +5,22 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-color: $color4;
+  background-color: $main-black;
 
   &--0 {
-    background-image: url('../../images/brian_jonson.jpg');
+    background-image: url('../../assets/images/brian_jonson.jpg');
   }
   &--1 {
-    background-image: url('../../images/malcolm_young.jpg');
+    background-image: url('../../assets/images/malcolm_young.jpg');
   }
   &--2 {
-    background-image: url('../../images/angus_young_.jpg');
+    background-image: url('../../assets/images/angus_young_.jpg');
   }
   &--3 {
-    background-image: url('../../images/axl_rose.jpg');
+    background-image: url('../../assets/images/axl_rose.jpg');
   }
   &--4 {
-    background-image: url('../../images/drummer_lady.png');
+    background-image: url('../../assets/images/drummer_lady.png');
   }
 
   &__link {
@@ -35,7 +35,7 @@
   &__name {
     font-size: 2rem;
     font-weight: 700;
-    color: $color2;
+    color: $main-white;
 
     &:hover::after {
       content: '';
@@ -50,17 +50,17 @@
 
     &--guitar {
       &:after {
-        background-image: url('../.././images/guitar.svg');
+        background-image: url('../../assets/images/guitar.svg');
       }
     }
     &--drums {
       &:after {
-        background-image: url('../.././images/drums.svg');
+        background-image: url('../../assets/images/drums.svg');
       }
     }
     &--vocal {
       &:after {
-        background-image: url('../.././images/vocal.svg');
+        background-image: url('../../assets/images/vocal.svg');
       }
     }
   }

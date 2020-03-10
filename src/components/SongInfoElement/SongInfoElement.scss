@@ -8,13 +8,13 @@
   width: 240px;
 
   &__title {
-    color: $color1;
+    color: $main-silver;
     display: flex;
     justify-content: flex-end;
   }
 
   &__name {
-    color: $color2;
+    color: $main-white;
     font-weight: bold;
     padding-left: 20px;
   }
