@@ -19,6 +19,8 @@
     margin: 0 auto;
 
     @include phone {
+      background-position: top center;
+      background-repeat: repeat;
       padding-top:100px;
       width: 100%;
     }
@@ -26,6 +28,10 @@
   &__program {
     list-style-type: none;
     padding: 0;
+  }
+
+  @include phone {
+    height: auto;
   }
 }
 .on-screen {
@@ -43,6 +49,10 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+
+  @include phone {
+    top: -2000px;
+  }
 }
 .TourMap .TourMap__logo {
   display: block;
