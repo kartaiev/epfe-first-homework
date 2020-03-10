@@ -2,7 +2,6 @@
   {
     "id": 0,
     "name": "Maxym",
-    "image": "images/malcolm_young.jpg",
     "instrument": "guitar",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -13,7 +12,6 @@
   {
     "id": 1,
     "name": "Dmytro",
-    "image": "images/malcolm_young.jpg",
     "instrument": "drums",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -24,7 +22,6 @@
   {
     "id": 2,
     "name": "Vladimir",
-    "image": "images/malcolm_young.jpg",
     "instrument": "vocal",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -35,7 +32,6 @@
   {
     "id": 3,
     "name": "Iryna",
-    "image": "images/malcolm_young.jpg",
     "instrument": "drums",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -46,7 +42,6 @@
   {
     "id": 4,
     "name": "Denys",
-    "image": "images/malcolm_young.jpg",
     "instrument": "guitar",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",

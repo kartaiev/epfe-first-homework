@@ -13,14 +13,11 @@ const Member = props => {
       params: { id },
     },
   } = props;
-  // const { name, instrument, match } = props;
-  // const { id } = match.params;
-  // const member = team[id];
 
   const member = team[id];
 
   return (
-    <div className="MemberPage">
+    <div className={`MemberPage MemberPage--${id}`}>
       <SideMenuContainer />
       <div className="MemberPage__wrapper">
         <h1 className="MemberPage__title">{`${member.name} | ID #${id}`}</h1>

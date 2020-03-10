@@ -6,18 +6,37 @@ body {
 }
 
 .MemberPage {
-  height: calc(100vh - 100px);
-  min-height: calc(100vh - 100px);
-  margin: 50px;
-  background-image: url(../../images/malcolm_young.jpg);
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
+
+  &--0 {
+    background-image: url('../../images/brian_jonson.jpg');
+  }
+  &--1 {
+    background-image: url('../../images/malcolm_young.jpg');
+  }
+  &--2 {
+    background-image: url('../../images/angus_young_.jpg');
+  }
+  &--3 {
+    background-image: url('../../images/axl_rose.jpg');
+  }
+  &--4 {
+    background-image: url('../../images/drummer_lady.png');
+  }
 }
 
 .MemberPage__wrapper {
-  width: 60%;
-  padding: 70px 0 0 150px;
+  width: 80%;
+  padding: 15% 0 0 20%;
   color: $color2;
 }
 
@@ -48,7 +67,5 @@ body {
 }
 
 .MemberPage__copyright-wrapper {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
+  margin: 50px 0;
 }
