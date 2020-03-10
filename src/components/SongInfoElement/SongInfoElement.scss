@@ -5,16 +5,33 @@
   display: flex;
   flex-direction: row;
   margin-right: 60px;
+  width: 240px;
+
+  &__title {
+    color: $color1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__name {
+    color: $color2;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+
+  &__name--animated {
+    animation: swish 0.5s;
+  }
 }
 
-.SongInfoElement__title {
-  color: $color1;
-  display: flex;
-  justify-content: flex-end;
-}
+@keyframes swish {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
 
-.SongInfoElement__name {
-  color: $color2;
-  font-weight: bold;
-  padding-left: 20px;
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 }

@@ -1,13 +1,11 @@
 import React from 'react';
-
 import ProgramList from '../ProgramList/ProgramList';
 import tourDates from '../../data/TourDates.json';
-import Header from '../Header/Header';
 
 import './TourMap.scss';
 import TourMapLogo from './images/TourMapLogo.png';
 
-export default function TourMap({ state, toogle }) {
+export default function TourMap({ state }) {
   return state ? (
     <div className="TourMap on-screen">
       <div className="TourMap__wrapper">
