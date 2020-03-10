@@ -7,7 +7,7 @@ import Burger from '../Burger/Burger';
 const TourMapController = ({ state, toggle }) => {
   return (
     <div className="TourMapController">
-      <div className="TourMapController__inner">
+      <div className="TourMapController__wrapper">
         {state && (
           <span className="TourMapController__text is-checked" onClick={toggle}>
             Close
