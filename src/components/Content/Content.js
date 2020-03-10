@@ -8,12 +8,20 @@ import TourMap from '../TourMap/TourMap';
 import SideMenuContainer from '../SideMenuContainer/SideMenuContainer';
 
 import './Content.scss';
+import Toggle from '../../utilits/toggle';
 
-const Content = ({ state, toogle }) => {
+const Content = () => {
   return (
     <div className="Content">
-      <TourMap state={state} toogle={toogle} />
-      <Header state={state} toogle={toogle} />
+      <Toggle>
+        {({ state, toggle }) => (
+          <>
+            <TourMap state={state} toggle={toggle} />
+            <Header state={state} toggle={toggle} />
+          </>
+        )}
+      </Toggle>
+
       <div className="Content__item Content__item--margined">
         <Central />
       </div>
