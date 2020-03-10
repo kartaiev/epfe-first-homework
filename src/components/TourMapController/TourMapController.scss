@@ -3,11 +3,15 @@
 .TourMapController {
   width: 100%;
 
-  &__inner {
+  &__wrapper {
     width: 150px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
@@ -17,9 +21,22 @@
     color: $color2;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 0;
+    transform: translate(95px, -30px);
 
+    &:nth-child(2) {
+      transform: translate(75px, 40px);
+    }
     &:hover {
       color: rgba(252, 72, 24, 1);
     }
   }
+}
+.TourMapController__text.is-checked {
+  font-size: 1em;
+  transform: translate(0, 0);
+  transition: 0.5s;
+  opacity: 1;
 }
