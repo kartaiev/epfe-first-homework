@@ -8,6 +8,7 @@ const SideMenuContainer = () => {
     <div className="SideMenuContainer">
       {pages.map(page => (
         <SideMenuElement
+          key={page}
           name={page}
           link={page === 'Home' ? '/' : page.toLowerCase()}
         />

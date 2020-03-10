@@ -1,11 +1,54 @@
+@import '../../palette.scss';
+@import '../../reset_module.scss';
+
+body {
+  background-color: $color4;
+}
+
 .MemberPage {
   height: calc(100vh - 100px);
   margin: 50px;
+  background-image: url(../../images/malcolm_young.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+.MemberPage__wrapper {
+  width: 60%;
+  padding: 70px 0 0 150px;
+  color: $color2;
+}
+
+.MemberPage__image {
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 500px;
+}
+
+.MemberPage__title {
+  font-size:  4rem;
+  font-weight: 700;
+  color: $color2;
+  text-transform: uppercase;
+}
+
+.MemberPage__subtitle {
+  padding-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color3;
+  text-transform: uppercase;
+}
+
+.MemberPage__description {
+  padding-bottom: 30px;
 }
 
 .MemberPage__copyright-wrapper {
-  position: fixed;
+  // position: fixed;
 
-  bottom: 50px;
-  right: 50px;
+  // bottom: 50px;
+  // right: 50px;
 }

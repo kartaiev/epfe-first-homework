@@ -1,20 +1,9 @@
 @import '../../palette.scss';
 
-/**RESET STYLES**/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import '../../reset_module.scss';
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
+.TeamPage {
+  overflow: hidden;
 }
 
 .aside__logo-container {
@@ -30,17 +19,22 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 40px;
+<<<<<<< HEAD
   background-color: $main-black;
+=======
+  background-color: $color4;
+>>>>>>> develop
 }
-.wrapper {
+.TeamPage__wrapper {
   flex-grow: 1;
 }
 
-.team__list {
+.Team__list {
   display: flex;
   width: 100%;
   position: relative;
 
+<<<<<<< HEAD
   &:hover {
     width: 40%;
   }
@@ -196,4 +190,9 @@ a {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+=======
+  // &:hover {
+  // width: 40%;
+  // }
+>>>>>>> develop
 }
