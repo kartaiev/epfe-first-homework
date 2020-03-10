@@ -17,7 +17,6 @@ body {
   background-position: right top;
   background-size: contain;
 
-
   &--0 {
     background-image: url('../../assets/images/brian_jonson.jpg');
   }
@@ -34,40 +33,85 @@ body {
     background-image: url('../../assets/images/drummer_lady.png');
   }
 
-.MemberPage__wrapper {
+  &__wrapper {
+    width: 80%;
+    padding: 15% 0 0 20%;
+    color: $main-white;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    width: 500px;
+  }
 
-  width: 80%;
-  padding: 15% 0 0 20%;
-  color: $main-white;
+  &__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $main-white;
+    text-transform: uppercase;
+  }
 
-}
-.MemberPage__image {
-  position: absolute;
-  top: 0;
-  right: 65px;
-  width: 500px;
-}
+  &__subtitle {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $main-orangered;
+    text-transform: uppercase;
+  }
 
-.MemberPage__title {
-  font-size: 4rem;
-  font-weight: 700;
-  color: $main-white;
-  text-transform: uppercase;
-}
+  &__description {
+    padding-bottom: 30px;
+  }
 
-.MemberPage__subtitle {
-  padding-bottom: 40px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: $main-orangered;
-  text-transform: uppercase;
-}
-
-.MemberPage__description {
-  padding-bottom: 30px;
-}
-
-.MemberPage__copyright-wrapper {
-  margin: 50px 0;
-}
+  &__copyright-wrapper {
+    margin: 50px 0;
+  }
+  &__label {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      color: $main-orangered;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -25px;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: $main-orangered;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: -45px;
+      width: 40px;
+      height: 20px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      background-color: $main-white;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+  }
 }
