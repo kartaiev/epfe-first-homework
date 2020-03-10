@@ -38,12 +38,12 @@ const Member = props => {
   );
 };
 
-// Member.propTypes = {
-//   id: PropTypes.string,
-// };
+Member.propTypes = {
+  id: PropTypes.number,
+};
 
-// Member.defaultProps = {
-//   id: '0',
-// };
+Member.defaultProps = {
+  id: '0',
+};
 
 export default Member;
