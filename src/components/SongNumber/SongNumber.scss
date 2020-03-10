@@ -3,7 +3,7 @@
 
 .SongNumber {
   align-items: center;
-  color: $color2;
+  color: $main-white;
   display: flex;
 
   @include phone {
@@ -14,7 +14,7 @@
 
   &__current {
     bottom: $spacing;
-    color: $color3;
+    color: $main-orangered;
     font-weight: bold;
     opacity: 1;
     position: relative;
