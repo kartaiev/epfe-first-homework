@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
-const Toogle = ({ children }) => {
+const Toggle = ({ children }) => {
   const [state, setstate] = useState(false);
 
-  const toogle = () => {
+  const toggle = () => {
     setstate(!state);
   };
 
   return children({
     state,
-    toogle,
+    toggle,
   });
 };
-export default Toogle;
+export default Toggle;

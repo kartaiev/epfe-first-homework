@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoContainer from '../../components/VideoContainer/VideoContainer';
 import Content from '../../components/Content/Content';
-import Toogle from '../../utilits/toogle';
+import Toogle from '../../utilits/toggle';
 
 const Home = () => {
   return (

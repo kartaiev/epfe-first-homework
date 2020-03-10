@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
 
-export default function SliderAssets() {
+const SliderAssets = ({ state, toggle }) => {
   const {
     paginate,
     index,
@@ -53,6 +53,7 @@ export default function SliderAssets() {
         <div className="slider__trackname">{songInfo[index].trackName}</div>
 
         <motion.button
+          onClick={toggle}
           whileHover={{ scale: 1.2, x: 5 }}
           variants={titleVariants}
           key={slide}
@@ -69,7 +70,7 @@ export default function SliderAssets() {
           type="button"
           className="slider__button button"
         >
-          Play
+          {state ? 'Stop' : 'Play'}
         </motion.button>
       </motion.div>
 
@@ -93,4 +94,6 @@ export default function SliderAssets() {
       </motion.svg>
     </div>
   );
-}
+};
+
+export default SliderAssets;

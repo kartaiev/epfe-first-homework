@@ -1,0 +1,67 @@
+@import '../../palette.scss';
+
+.MemberCard {
+  width: 20%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: $color3;
+
+  &--1 {
+    background-image: url('images/malcolm_young.jpg');
+  }
+  &--2 {
+    background-image: url('images/angus_young_.jpg');
+  }
+  &--3 {
+    background-image: url('images/axl_rose.jpg');
+  }
+  &--4 {
+    background-image: url('images/drummer_lady.png');
+  }
+  &--5 {
+    background-image: url('images/brian_jonson.jpg');
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color2;
+
+    &:hover::after {
+      content: '';
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 0 auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--guitar {
+      &:after {
+        background-image: url('./images/guitar.svg');
+      }
+    }
+    &--drums {
+      &:after {
+        background-image: url('./images/drums.svg');
+      }
+    }
+    &--vocal {
+      &:after {
+        background-image: url('./images/vocal.svg');
+      }
+    }
+  }
+}
