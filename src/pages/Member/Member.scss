@@ -6,44 +6,66 @@ body {
 }
 
 .MemberPage {
-  height: calc(100vh - 100px);
-  margin: 50px;
-  background-image: url('../../assets/images/malcolm_young.jpg');
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
-  &__wrapper {
-    width: 60%;
-    padding: 70px 0 0 150px;
-    color: $main-white;
-    &__image {
-      position: absolute;
-      top: 0;
-      right: 65px;
-      width: 500px;
-    }
-    &__title {
-      font-size: 4rem;
-      font-weight: 700;
-      color: $main-white;
-      text-transform: uppercase;
-    }
-    &__subtitle {
-      padding-bottom: 40px;
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: $main-orangered;
-      text-transform: uppercase;
-    }
-    &__description {
-      padding-bottom: 30px;
-    }
+
+  &--0 {
+    background-image: url('../../assets/images/brian_jonson.jpg');
+  }
+  &--1 {
+    background-image: url('../../assets/images/malcolm_young.jpg');
+  }
+  &--2 {
+    background-image: url('../../assets/images/angus_young_.jpg');
+  }
+  &--3 {
+    background-image: url('../../assets/images/axl_rose.jpg');
+  }
+  &--4 {
+    background-image: url('../../assets/images/drummer_lady.png');
   }
 }
 
-// .MemberPage__copyright-wrapper {
-//   // position: fixed;
+.MemberPage__wrapper {
+  width: 80%;
+  padding: 15% 0 0 20%;
+  color: $main-white;
+}
 
-//   // bottom: 50px;
-//   // right: 50px;
-// }
+.MemberPage__image {
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 500px;
+}
+
+.MemberPage__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: $main-white;
+  text-transform: uppercase;
+}
+
+.MemberPage__subtitle {
+  padding-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $main-orangered;
+  text-transform: uppercase;
+}
+
+.MemberPage__description {
+  padding-bottom: 30px;
+}
+
+.MemberPage__copyright-wrapper {
+  margin: 50px 0;
+}

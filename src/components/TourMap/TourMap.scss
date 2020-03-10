@@ -9,13 +9,6 @@
   z-index: 2;
   height: 100vh;
 
-  &__logo {
-    display: block;
-    text-align: center;
-    width: 120px;
-    margin: 0 auto;
-  }
-
   &__wrapper {
     width: 60%;
     padding: 30px 0;
@@ -44,4 +37,10 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+.TourMap .TourMap__logo {
+  display: block;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
 }

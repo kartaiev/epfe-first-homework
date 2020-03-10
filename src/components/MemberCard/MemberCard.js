@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -9,7 +8,7 @@ const MemberCard = props => {
 
   return (
     <li className={`Team__member MemberCard MemberCard--${id}`} id={id}>
-      <Link to={`Member${id}`} className="MemberCard__link">
+      <Link to={`member/${id}`} className="MemberCard__link">
         <span className={`MemberCard__name MemberCard__name--${instrument}`}>
           {name}
         </span>

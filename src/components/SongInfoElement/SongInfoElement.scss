@@ -1,9 +1,12 @@
 @import '../../palette.scss';
 
 .SongInfoElement {
-  color: $main-silver;
+  align-items: center;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 60px;
+  width: 240px;
+
   &__title {
     color: $main-silver;
     display: flex;

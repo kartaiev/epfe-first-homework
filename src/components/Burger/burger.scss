@@ -4,21 +4,21 @@
   position: relative;
   width: 30px;
   cursor: pointer;
-  &__controller {
-    position: relative;
-    height: 2px;
-    width: 100%;
-    background-color: $main-white;
-  }
-
   &:hover > .Burger__controller {
     background-color: $main-orangered;
   }
 }
 
-.Burger .is-close:first-child {
+.Burger__controller {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: $main-white;
+}
+
+.is-close:first-child {
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 0;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -49,7 +49,7 @@
 .is-open:first-child {
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: -2px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -65,7 +65,7 @@
 .is-open:last-child {
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: -2px;
   transition: 1s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;

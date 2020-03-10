@@ -7,6 +7,9 @@
   background-size: cover;
   background-color: $main-black;
 
+  &--0 {
+    background-image: url('../../assets/images/brian_jonson.jpg');
+  }
   &--1 {
     background-image: url('../../assets/images/malcolm_young.jpg');
   }
@@ -18,9 +21,6 @@
   }
   &--4 {
     background-image: url('../../assets/images/drummer_lady.png');
-  }
-  &--5 {
-    background-image: url('../../assets/images/brian_jonson.jpg');
   }
 
   &__link {
@@ -55,7 +55,7 @@
     }
     &--drums {
       &:after {
-        background-image: url('../../assets/images/drums.svg'); 
+        background-image: url('../../assets/images/drums.svg');
       }
     }
     &--vocal {
