@@ -1,12 +1,22 @@
 import React from 'react';
 import './Logo.scss';
 
-const Logo = () => {
+const Logo = ({ classes }) => {
+  const setClass = classList => {
+    const defaultClass = 'logo ';
+    if (classList === undefined) {
+      return defaultClass;
+    }
+    return Array.isArray(classList)
+      ? defaultClass + classList.join(' ')
+      : defaultClass + classList;
+  };
+
   return (
     <picture>
       <img
-        className="logo"
-        src={require('../../images/EP_AM-logo.png')}
+        className={setClass(classes)}
+        src={require('../../assets/images/EP_AM-logo.png')}
         alt="logo"
       />
     </picture>

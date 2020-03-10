@@ -5,18 +5,17 @@ import './TourMapController.scss';
 import Burger from '../Burger/Burger';
 
 const TourMapController = ({ state, toogle }) => {
-  const controllerClasses = {
-    false: 'TourMapController__text is-checked',
-    true: 'TourMapController__text',
-  };
+  const getClass = state =>
+    state ? 'TourMapController__text' : 'TourMapController__text is-checked';
+
   return (
     <div className="TourMapController">
       <div className="TourMapController__wrapper">
         <div className="TourMapController__inner">
-          <span className={controllerClasses[state]} onClick={toogle}>
+          <span className={getClass(state)} onClick={toogle}>
             Tourmap
           </span>
-          <span className={controllerClasses[!state]} onClick={toogle}>
+          <span className={getClass(!state)} onClick={toogle}>
             Close
           </span>
         </div>

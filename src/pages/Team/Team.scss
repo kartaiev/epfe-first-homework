@@ -30,8 +30,7 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  // width: 73px;
-  background-color: $color4;
+  background-color: $main-black;
 }
 .wrapper {
   flex-grow: 1;
@@ -55,19 +54,19 @@ a {
   transition: all 0.5s;
 
   &--first {
-    background-image: url('images/malcolm_young.jpg');
+    background-image: url('../../assets/images/malcolm_young.jpg');
   }
   &--second {
-    background-image: url('images/angus_young_.jpg');
+    background-image: url('../../assets/images/angus_young_.jpg');
   }
   &--third {
-    background-image: url('images/angus_young.jpg');
+    background-image: url('../../assets/images/angus_young.jpg');
   }
   &--fourth {
-    background-image: url('images/drummer_lady.png');
+    background-image: url('../../assets/images/drummer_lady.png');
   }
   &--fifth {
-    background-image: url('images/axl_rose.jpg');
+    background-image: url('../../assets/images/axl_rose.jpg');
   }
 }
 
@@ -102,17 +101,17 @@ a {
 
   &--guitar {
     &:after {
-      background-image: url('./images/guitar.svg');
+      background-image: url('../../assets/images/guitar.svg');
     }
   }
   &--drumstick {
     &:after {
-      background-image: url('./images/drumstick.svg');
+      background-image: url('../../assets/images/drumstick.svg');
     }
   }
   &--sing {
     &:after {
-      background-image: url('./images/sing.svg');
+      background-image: url('../../assets/images/sing.svg');
     }
   }
 }

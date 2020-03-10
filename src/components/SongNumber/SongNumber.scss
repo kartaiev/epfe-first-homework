@@ -2,7 +2,7 @@
 
 .SongNumber {
   align-items: center;
-  color: $color2;
+  color: $main-white;
   display: flex;
 
   $spacing: 7px;
@@ -10,7 +10,7 @@
   &__current {
     animation: swish 1s;
     bottom: $spacing;
-    color: $color3;
+    color: $main-orangered;
     font-weight: bold;
     opacity: 1;
     position: relative;

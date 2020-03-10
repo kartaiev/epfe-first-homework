@@ -2,27 +2,17 @@ import React from 'react';
 
 import ProgramList from '../ProgramList/ProgramList';
 import tourDates from '../../data/TourDates.json';
-import Header from '../Header/Header';
 
 import './TourMap.scss';
-import TourMapLogo from './images/TourMapLogo.png';
+import Logo from '../Logo/Logo';
 
 export default function TourMap({ state, toogle }) {
-  return state ? (
-    <div className="TourMap on-screen">
+  const getClass = state =>
+    state ? 'TourMap on-screen' : 'TourMap off-screen';
+  return (
+    <div className={getClass(state)}>
       <div className="TourMap__wrapper">
-        <img src={TourMapLogo} className="TourMap__logo" alt="EP/AM Logo" />
-        <ul className="TourMap__program ProgramList">
-          {tourDates.map((concert, index) => (
-            <ProgramList key={index} concertInfo={concert} />
-          ))}
-        </ul>
-      </div>
-    </div>
-  ) : (
-    <div className="TourMap off-screen">
-      <div className="TourMap__wrapper">
-        <img src={TourMapLogo} className="TourMap__logo" alt="EP/AM Logo" />
+        <Logo classes="TourMap__logo" />
         <ul className="TourMap__program ProgramList">
           {tourDates.map((concert, index) => (
             <ProgramList key={index} concertInfo={concert} />
