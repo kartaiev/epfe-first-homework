@@ -1,3 +1,4 @@
+@import '../../media_mixins.scss';
 @import '../../palette.scss';
 
 .MemberCard {
@@ -6,6 +7,10 @@
   background-position: center;
   background-size: cover;
   background-color: $color3;
+
+  @include phone {
+    width: 100%;
+  }
 
   &--1 {
     background-image: url('images/malcolm_young.jpg');

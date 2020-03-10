@@ -1,3 +1,4 @@
+@import '../../media_mixins.scss';
 @import '../../palette.scss';
 
 .TourMap {
@@ -23,6 +24,11 @@
     background-position: center center;
     background-size: cover;
     margin: 0 auto;
+
+    @include phone {
+      padding-top:100px;
+      width: 100%;
+    }
   }
   &__program {
     list-style-type: none;

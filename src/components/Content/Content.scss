@@ -1,9 +1,15 @@
+@import '../../media_mixins.scss';
+
 .Content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   height: 100vh;
+  
+  @include phone {
+    height: -webkit-fill-available;
+  }
 }
 
 .Content__item--sidemenu {

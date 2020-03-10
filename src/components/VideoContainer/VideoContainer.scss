@@ -1,5 +1,6 @@
 @import './style.utils/positionsSizes';
 @import './style.utils/flexes';
+@import '../../media_mixins.scss';
 
 @import '../../palette.scss';
 
@@ -44,5 +45,16 @@
     min-width: 100%;
     min-height: auto;
     object-fit: cover;
+      
+    @include phone {
+      display: none;
+    }
+  }
+
+  @include phone {
+    background: url('../../images/poster.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
