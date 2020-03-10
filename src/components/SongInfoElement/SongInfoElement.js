@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AnimateOnChange from 'react-animate-on-change';
 import './SongInfoElement.scss';
 
 const SongInfoElement = props => {
@@ -7,7 +8,13 @@ const SongInfoElement = props => {
   return (
     <div className="SongInfoElement">
       <div className="SongInfoElement__title">{title.toLowerCase()}</div>
-      <div className="SongInfoElement__name">{name.toUpperCase()}</div>
+      <AnimateOnChange
+        baseClassName="SongInfoElement__name"
+        animationClassName="SongInfoElement__name--animated"
+        animate={name}
+      >
+        {name.toUpperCase()}
+      </AnimateOnChange>
     </div>
   );
 };

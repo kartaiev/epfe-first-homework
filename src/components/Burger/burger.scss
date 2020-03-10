@@ -4,19 +4,19 @@
   position: relative;
   width: 30px;
   cursor: pointer;
+  &__controller {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: $main-white;
+  }
+
   &:hover > .Burger__controller {
     background-color: $main-orangered;
   }
 }
 
-.Burger__controller {
-  position: relative;
-  height: 2px;
-  width: 100%;
-  background-color: $main-white;
-}
-
-.is-close:first-child {
+.Burger .is-close:first-child {
   position: absolute;
   top: 0px;
   left: 0;

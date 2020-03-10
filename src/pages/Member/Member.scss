@@ -12,43 +12,38 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
+  &__wrapper {
+    width: 60%;
+    padding: 70px 0 0 150px;
+    color: $main-white;
+    &__image {
+      position: absolute;
+      top: 0;
+      right: 65px;
+      width: 500px;
+    }
+    &__title {
+      font-size: 4rem;
+      font-weight: 700;
+      color: $main-white;
+      text-transform: uppercase;
+    }
+    &__subtitle {
+      padding-bottom: 40px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $main-orangered;
+      text-transform: uppercase;
+    }
+    &__description {
+      padding-bottom: 30px;
+    }
+  }
 }
 
-.MemberPage__wrapper {
-  width: 60%;
-  padding: 70px 0 0 150px;
-  color: $main-white;
-}
+// .MemberPage__copyright-wrapper {
+//   // position: fixed;
 
-.MemberPage__image {
-  position: absolute;
-  top: 0;
-  right: 65px;
-  width: 500px;
-}
-
-.MemberPage__title {
-  font-size:  4rem;
-  font-weight: 700;
-  color:$main-white;
-  text-transform: uppercase;
-}
-
-.MemberPage__subtitle {
-  padding-bottom: 40px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: $main-orangered;
-  text-transform: uppercase;
-}
-
-.MemberPage__description {
-  padding-bottom: 30px;
-}
-
-.MemberPage__copyright-wrapper {
-  // position: fixed;
-
-  // bottom: 50px;
-  // right: 50px;
-}
+//   // bottom: 50px;
+//   // right: 50px;
+// }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ProgramList from '../ProgramList/ProgramList';
 import tourDates from '../../data/TourDates.json';
 

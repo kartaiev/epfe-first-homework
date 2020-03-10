@@ -8,14 +8,19 @@
   $spacing: 7px;
 
   &__current {
-    animation: swish 1s;
     bottom: $spacing;
     color: $main-orangered;
     font-weight: bold;
     opacity: 1;
     position: relative;
     right: $spacing;
+    text-align: center;
     transform: rotateX(0deg);
+    width: 12px;
+  }
+
+  &__current--animated {
+    animation: swish 0.5s;
   }
 
   &__total {
