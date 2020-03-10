@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import { wrap } from '@popmotion/popcorn';
 import vids from '../assets/videos';
+import songInfo from '../data/SongsInfo.json';
 
 export const SliderContext = createContext(undefined, undefined);
 
@@ -65,6 +66,7 @@ export const SliderProvider = ({ children }) => {
         direction,
         vids,
         paginate,
+        songInfo,
       }}
     >
       {children}

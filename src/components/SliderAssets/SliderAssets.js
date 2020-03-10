@@ -5,16 +5,14 @@ import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
 
 export default function SliderAssets() {
-  const { paginate, index, direction, titleVariants, slide } = useContext(
-    SliderContext
-  );
-
-  const trackNames = [
-    'Highway to Front',
-    'Node bells',
-    'Reactstruck',
-    `T.N.T. I'm epamite`,
-  ];
+  const {
+    paginate,
+    index,
+    direction,
+    titleVariants,
+    slide,
+    songInfo,
+  } = useContext(SliderContext);
 
   return (
     <div className="SliderAssets">
@@ -52,7 +50,7 @@ export default function SliderAssets() {
           damping: 200,
         }}
       >
-        <div className="slider__trackname">{trackNames[index]}</div>
+        <div className="slider__trackname">{songInfo[index].trackName}</div>
 
         <motion.button
           whileHover={{ scale: 1.2, x: 5 }}
