@@ -14,7 +14,7 @@ let teamListRef;
 // nav items
 const teamMembers = team.map(member => (
   <MemberCard
-    className="Team__member"
+    // className="Team__member"
     key={member.id}
     id={member.id}
     name={member.name}
@@ -30,19 +30,23 @@ const appearAnimation = () => {
 
   const members = Array.from(teamListRef.current.children);
   members.forEach((member, i) => {
-    member.classList.add(`slide-in-nav-item-delay-${i}`);
+    member.classList.add('Team__member');
+    member.classList.add(`Team__member--delay-${i}`);
+
+    // // Old animation
+    // member.classList.add(`slide-in-nav-item-delay-${i}`);
   });
 };
 
 const disappearAnimation = () => {
-  overlayNavigation.classList.remove('overlay-slide-down');
-  overlayNavigation.classList.add('overlay-slide-up');
-
-  const members = Array.from(teamListRef.current.children);
-  members.forEach((member, i) => {
-    member.classList.add(`slide-in-nav-item-delay-${i}-reverse`);
-    member.classList.remove(`slide-in-nav-item-delay-${i}`);
-  });
+  // // Old animation
+  // overlayNavigation.classList.remove('overlay-slide-down');
+  // overlayNavigation.classList.add('overlay-slide-up');
+  // const members = Array.from(teamListRef.current.children);
+  // members.forEach((member, i) => {
+  //   member.classList.add(`slide-in-nav-item-delay-${i}-reverse`);
+  //   member.classList.remove(`slide-in-nav-item-delay-${i}`);
+  // });
 };
 
 const Team = () => {
