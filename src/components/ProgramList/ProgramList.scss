@@ -4,22 +4,22 @@
     color: #fff;
     font-family: Montserrat;
     margin: 50px;
-    padding-left:30px;
+    padding-left: 30px;
     text-transform: uppercase;
   }
   &__location {
-    font-size: calc(.5em + 2vw);
+    font-size: 2.5rem;
     font-weight: 900;
   }
   &__country {
-    font-size: calc(.5em + 2vw);
+    font-size: 2.5rem;
     font-weight: 900;
   }
   &__date {
-    font-size: calc(.5em + 1vw);
+    font-size: 1.5rem;
     font-weight: 900;
   }
 }
 .is-active {
-  border-left: 5px solid $color3;
+  border-left: 5px solid $main-orangered;
 }

@@ -11,29 +11,18 @@ function getDate(date, options) {
 }
 
 export default function ProgramList(props) {
-  if (props.concertInfo.isActive) {
-    return (
-      <li className="ProgramList__item is-active">
-        <time
-          dateTime={props.concertInfo.dateTime}
-          className="ProgramList__date"
-        >
-          {getDate(props.concertInfo.dateTime, dateOptions)}
-        </time>
-        <div className="ProgramList__location">
-          {props.concertInfo.location}
-        </div>
-        <div className="ProgramList__country">{props.concertInfo.country}</div>
-      </li>
-    );
-  }
+  const { dateTime, country, location, isActive } = props.concertInfo;
+
+  const getClass = state =>
+    state ? 'ProgramList__item is-active' : 'ProgramList__item';
+
   return (
-    <li className="ProgramList__item">
-      <time dateTime={props.concertInfo.dateTime} className="ProgramList__date">
-        {getDate(props.concertInfo.dateTime, dateOptions)}
+    <li className={getClass(isActive)}>
+      <time dateTime={dateTime} className="ProgramList__date">
+        {getDate(dateTime, dateOptions)}
       </time>
-      <div className="ProgramList__location">{props.concertInfo.location}</div>
-      <div className="ProgramList__country">{props.concertInfo.country}</div>
+      <div className="ProgramList__location">{location}</div>
+      <div className="ProgramList__country">{country}</div>
     </li>
   );
 }

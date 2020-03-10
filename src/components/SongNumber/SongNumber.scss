@@ -2,14 +2,14 @@
 
 .SongNumber {
   align-items: center;
-  color: $color2;
+  color: $main-white;
   display: flex;
 
   $spacing: 7px;
 
   &__current {
     bottom: $spacing;
-    color: $color3;
+    color: $main-orangered;
     font-weight: bold;
     opacity: 1;
     position: relative;
