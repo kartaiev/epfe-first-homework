@@ -7,6 +7,9 @@
   background-size: cover;
   background-color: $color3;
 
+  &--0 {
+    background-image: url('images/brian_jonson.jpg');
+  }
   &--1 {
     background-image: url('images/malcolm_young.jpg');
   }
@@ -18,9 +21,6 @@
   }
   &--4 {
     background-image: url('images/drummer_lady.png');
-  }
-  &--5 {
-    background-image: url('images/brian_jonson.jpg');
   }
 
   &__link {

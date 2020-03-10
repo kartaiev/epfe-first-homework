@@ -2,8 +2,10 @@ import React from 'react';
 import SideMenuElement from '../SideMenuElement/SideMenuElement';
 import './SideMenuContainer.scss';
 
+// const SideMenuContainer = ({ pages }) => {
 const SideMenuContainer = () => {
-  const pages = ['Home', 'Team', 'Member'];
+  // TODO: remove Member later
+  const pages = ['Home', 'Team'];
   return (
     <div className="SideMenuContainer">
       {pages.map(page => (

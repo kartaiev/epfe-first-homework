@@ -7,6 +7,7 @@ body {
 
 .MemberPage {
   height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   margin: 50px;
   background-image: url(../../images/malcolm_young.jpg);
   background-repeat: no-repeat;
@@ -28,7 +29,7 @@ body {
 }
 
 .MemberPage__title {
-  font-size:  4rem;
+  font-size: 4rem;
   font-weight: 700;
   color: $color2;
   text-transform: uppercase;
@@ -47,8 +48,7 @@ body {
 }
 
 .MemberPage__copyright-wrapper {
-  // position: fixed;
-
-  // bottom: 50px;
-  // right: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
