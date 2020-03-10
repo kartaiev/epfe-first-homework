@@ -1,17 +1,23 @@
 import React from 'react';
+import ProgramList from '../ProgramList/ProgramList';
+import tourDates from '../../data/TourDates.json';
 
 import './TourMap.scss';
+import Logo from '../Logo/Logo';
 
-import Burger from '../Burger/Burger';
-
-const TourMap = () => {
+export default function TourMap({ state, toogle }) {
+  const getClass = state =>
+    state ? 'TourMap on-screen' : 'TourMap off-screen';
   return (
-    <div className="TourMap block">
-      <div className="TourMap__inner">
-        <span className="TourMap__title">Tourmap</span>
-        <Burger />
+    <div className={getClass(state)}>
+      <div className="TourMap__wrapper">
+        <Logo classes="TourMap__logo" />
+        <ul className="TourMap__program ProgramList">
+          {tourDates.map((concert, index) => (
+            <ProgramList key={index} concertInfo={concert} />
+          ))}
+        </ul>
       </div>
     </div>
   );
-};
-export default TourMap;
+}

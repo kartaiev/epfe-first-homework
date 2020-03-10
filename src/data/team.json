@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "name": "Maxym",
+    "instrument": "guitar",
+    "descriptions": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
+      "1orem ipsum dolor sit amet consectetur adipisicing elit2"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Dmytro",
+    "instrument": "drums",
+    "descriptions": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
+      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Vladimir",
+    "instrument": "vocal",
+    "descriptions": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
+      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Iryna",
+    "instrument": "drums",
+    "descriptions": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
+      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Denys",
+    "instrument": "guitar",
+    "descriptions": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
+      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ]
+  }
+]

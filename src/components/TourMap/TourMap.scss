@@ -1,28 +1,46 @@
 @import '../../palette.scss';
 
 .TourMap {
+  position: absolute;
   width: 100%;
+  background: $main-black;
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 2;
+  height: 100vh;
 
-  &__inner {
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    // padding: 40px 20px 40px 0;
+  &__wrapper {
+    width: 60%;
+    padding: 30px 0;
+    background-image: url('../../assets/images/TourMap_bg.svg');
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
   }
-
-  &__title {
-    width: 100%;
-    
-    text-align: center;
-    text-transform: uppercase;
-    color: $color2;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      color: rgba(252, 72, 24, 1);
-    }
+  &__program {
+    list-style-type: none;
+    padding: 0;
   }
-
+}
+.on-screen {
+  top: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.off-screen {
+  top: -1000px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.TourMap .TourMap__logo {
+  display: block;
+  text-align: center;
+  width: 120px;
+  margin: 0 auto;
 }

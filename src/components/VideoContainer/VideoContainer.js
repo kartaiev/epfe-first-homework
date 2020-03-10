@@ -1,56 +1,22 @@
 import './VideoContainer.scss';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { wrap } from '@popmotion/popcorn';
-import vids from '../../assets/videos/index';
+import { SliderContext } from '../../contexts/SliderContext';
 
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-// const variants = {
-//   center: {
-//     zIndex: 1,
-//     x: 0,
-//     opacity: 1,
-//   },
-//   enter: direction => {
-//     return {
-//       x: direction > 0 ? 300 : -300, // '100vw'
-//       opacity: 0,
-//     };
-//   },
-//   exit: direction => {
-//     return {
-//       zIndex: 0,
-//       x: direction < 0 ? 300 : -300, // '100vw'
-//       opacity: 0,
-//     };
-//   },
-// };
-
-const variants = {
-  center: {
-    zIndex: 1,
-    opacity: 1,
-  },
-  enter: {
-    opacity: 0,
-  },
-  exit: {
-    zIndex: 0,
-    opacity: 0,
-  },
-};
-
 const VideoContainer = () => {
-  const [[page, direction], setPage] = useState([0, 0]);
-  const vidsIndex = wrap(0, vids.length, page);
-
-  const paginate = newDirection => {
-    setPage([page + newDirection, newDirection]);
-  };
+  const {
+    slide,
+    direction,
+    index,
+    paginate,
+    vids,
+    videoSliderVariants,
+  } = useContext(SliderContext);
 
   return (
     <div className="VideoContainer slider">
@@ -60,14 +26,14 @@ const VideoContainer = () => {
           muted
           loop
           className="slider__video"
-          key={page}
-          src={vids[vidsIndex]}
+          key={slide}
+          src={vids[index]}
           custom={direction}
-          variants={variants}
+          variants={videoSliderVariants}
           initial="enter"
           animate="center"
           exit="exit"
-          transition={{ type: 'tween', ease: 'easeIn', duration: 1 }}
+          transition={{ duration: 2 }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}
@@ -82,12 +48,6 @@ const VideoContainer = () => {
           }}
         />
       </AnimatePresence>
-      <div className="next" onClick={() => paginate(1)}>
-        ‣
-      </div>
-      <div className="prev" onClick={() => paginate(-1)}>
-        ‣
-      </div>
     </div>
   );
 };

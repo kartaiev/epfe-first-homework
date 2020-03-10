@@ -1,25 +1,41 @@
 @import '../../palette.scss';
 
-.slider__assets {
+.SliderAssets {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 
-.slider__trackname {
-  font-size: 5em;
-  font-weight: 700;
-  text-align: left;
-  text-transform: uppercase;
-  color: $color2;
-}
-.slider__button {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: $color3;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: none;
+  &__controls {
+    top: calc(50% - 20px);
+    margin: 50px;
+    cursor: pointer;
+  }
+
+  &-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .slider__trackname {
+      font-size: 4.5rem;
+      font-weight: 700;
+      text-align: left;
+      text-transform: uppercase;
+      color: $main-white;
+    }
+
+    .slider__button {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $main-orangered;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      outline: none;
+    }
+  }
 }

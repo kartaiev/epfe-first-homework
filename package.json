@@ -11,10 +11,12 @@
     "framer-motion": "^1.9.0",
     "node-sass": "^4.13.1",
     "popmotion": "^8.7.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "react-router-dom": "^5.1.2"
+    "react-sound": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

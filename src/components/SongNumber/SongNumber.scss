@@ -1,0 +1,44 @@
+@import '../../palette.scss';
+
+.SongNumber {
+  align-items: center;
+  color: $main-white;
+  display: flex;
+
+  $spacing: 7px;
+
+  &__current {
+    bottom: $spacing;
+    color: $main-orangered;
+    font-weight: bold;
+    opacity: 1;
+    position: relative;
+    right: $spacing;
+    text-align: center;
+    transform: rotateX(0deg);
+    width: 12px;
+  }
+
+  &__current--animated {
+    animation: swish 0.5s;
+  }
+
+  &__total {
+    font-weight: bold;
+    left: $spacing;
+    position: relative;
+    top: $spacing;
+  }
+}
+
+@keyframes swish {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}

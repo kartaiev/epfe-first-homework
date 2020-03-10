@@ -7,9 +7,10 @@
 }
 
 .SideMenuElement__link {
-  color: $color2;
+  color: $main-white;
   font-size: 0.8em;
   font-weight: bold;
+  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   transform: rotate(270deg);

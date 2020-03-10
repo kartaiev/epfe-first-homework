@@ -3,7 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
 
-  // TODO: Remake later for appropriate margins
-  height: calc(100vh - 100px);
+  height: 100vh;
+}
+
+.Content__item--sidemenu {
+  position: fixed;
+  margin: 0 50px;
+}
+
+.Content__item--margined {
   margin: 50px;
 }

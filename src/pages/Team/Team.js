@@ -1,47 +1,59 @@
-import React from 'react';
-import './Team.scss';
+import React, { useEffect } from 'react';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Logo from '../../components/Logo/Logo';
+import MemberCard from '../../components/MemberCard/MemberCard';
+
+import './Team.scss';
+import './TeamAnimations.scss';
+
+import team from '../../data/team.json';
+
+let teamListRef;
+
+// nav items
+const teamMembers = team.map(member => (
+  <MemberCard
+    // className="Team__member"
+    key={member.id}
+    id={member.id}
+    name={member.name}
+    image={member.image}
+    instrument={member.instrument}
+  />
+));
+
+const appearAnimation = () => {
+  const members = Array.from(teamListRef.current.children);
+  members.forEach((member, i) => {
+    member.classList.add(`Team__member--delay-${i}`);
+  });
+};
+
+const disappearAnimation = () => {
+  //
+};
 
 const Team = () => {
+  teamListRef = React.createRef();
+
+  // ComponentDidMount
+  useEffect(() => appearAnimation(), []);
+
+  // ComponentWillUnmount
+  useEffect(() => () => disappearAnimation(), []);
+
   return (
-    <div className="block">
-      <aside className="aside">
-        <Logo />
+    <div className="TeamPage block">
+      <aside className="TeamPage__aside aside">
+        <div className="aside__logo-container">
+          <Logo />
+        </div>
         <SideMenuContainer />
       </aside>
-      <div className="wrapper">
-        <nav className="team">
-          <ul className="team__list">
-            <li className="team__list-item team__list-item--first">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--guitar">Max</span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--second">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--drumstick">
-                  Dima
-                </span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--third">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--sing">Vlad</span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--fourth">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--drumstick">
-                  Iryna
-                </span>
-              </a>
-            </li>
-            <li className="team__list-item team__list-item--fifth">
-              <a className="team__list-link" href="#">
-                <span className="team__member team__member--guitar">Dan</span>
-              </a>
-            </li>
+      <div className="TeamPage__wrapper">
+        <nav className="Team">
+          <ul className="Team__list" ref={teamListRef}>
+            {teamMembers}
           </ul>
         </nav>
       </div>
