@@ -15,7 +15,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: -150ms;
-  animation-delay: -150ms;
+  animation-delay: 0ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -27,7 +27,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: 0ms;
-  animation-delay: 0ms;
+  animation-delay: 150ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -39,7 +39,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: 150ms;
-  animation-delay: 150ms;
+  animation-delay: 300ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -51,7 +51,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: 300ms;
-  animation-delay: 300ms;
+  animation-delay: 450ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -63,7 +63,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: 450ms;
-  animation-delay: 450ms;
+  animation-delay: 600ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -75,7 +75,7 @@
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
   -webkit-animation-delay: 600ms;
-  animation-delay: 600ms;
+  animation-delay: 750ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -111,91 +111,5 @@
     opacity: 1;
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
-  }
-}
-
-// Old animation
-
-.slide-in-nav-item-delay-0 {
-  animation: slide-in-nav-item 0.3s ease-in-out 1 0.1s both;
-}
-
-.slide-in-nav-item-delay-1 {
-  animation: slide-in-nav-item 0.3s ease-in-out 1 0.2s both;
-}
-
-.slide-in-nav-item-delay-2 {
-  animation: slide-in-nav-item 0.3s ease-in-out 1 0.3s both;
-}
-
-.slide-in-nav-item-delay-3 {
-  animation: slide-in-nav-item 0.3s ease-in-out 1 0.4s both;
-}
-
-.slide-in-nav-item-delay-4 {
-  animation: slide-in-nav-item 0.3s ease-in-out 1 0.5s both;
-}
-
-.slide-in-nav-item-delay-0-reverse {
-  animation: slide-in-nav-item-reverse 0.3s linear 1 0.5s both;
-}
-
-.slide-in-nav-item-delay-1-reverse {
-  animation: slide-in-nav-item-reverse 0.3s linear 1 0.4s both;
-}
-
-.slide-in-nav-item-delay-2-reverse {
-  animation: slide-in-nav-item-reverse 0.3s linear 1 0.3s both;
-}
-
-.slide-in-nav-item-delay-3-reverse {
-  animation: slide-in-nav-item-reverse 0.3s linear 1 0.2s both;
-}
-
-.slide-in-nav-item-delay-4-reverse {
-  animation: slide-in-nav-item-reverse 0.3s linear 1 both;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(0, 0%, 0%, 0.8);
-  transform: translateX(-100%);
-}
-
-.overlay-slide-down {
-  transition: all 0.4s ease-in-out;
-  transform: translateX(0);
-}
-
-.overlay-slide-up {
-  transition: all 0.8s ease-in-out;
-  transform: translateX(-100%);
-}
-
-@keyframes slide-in-nav-item {
-  from {
-    opacity: 0.2;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-in-nav-item-reverse {
-  from {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
   }
 }
