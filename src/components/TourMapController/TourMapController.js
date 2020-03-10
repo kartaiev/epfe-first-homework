@@ -17,10 +17,7 @@ const TourMapController = ({ state, toggle }) => {
           <span className="TourMapController__text is-checked" onClick={toggle}>
             Tourmap
           </span>
-          <span className={getClass(!state)} onClick={toogle}>
-            Close
-          </span>
-        </div>
+        )}
 
         <Burger state={state} toggle={toggle} />
       </div>

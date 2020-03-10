@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Burger.scss';
+import './burger.scss';
 
 const Burger = ({ state, toggle }) => {
   return state ? (
