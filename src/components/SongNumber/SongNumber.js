@@ -8,7 +8,6 @@ const SongNumber = props => {
 
   return (
     <div className="SongNumber">
-      {/* <span className="SongNumber__current">{current}</span> */}
       <AnimateOnChange
         baseClassName="SongNumber__current"
         animationClassName="SongNumber__current--animated"
