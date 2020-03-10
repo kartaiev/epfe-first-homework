@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import Sound from 'react-sound';
 
@@ -75,7 +75,7 @@ const SliderAssets = ({ state, toggle }) => {
           type="button"
           className="slider__button button"
         >
-          {state ? 'Stop' : 'Play'}
+          {state ? <span>Stop</span> : <span>Play</span>}
         </motion.button>
       </motion.div>
 
