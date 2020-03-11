@@ -22,7 +22,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: $main-gold;
+    background-color: $main-orangered;
     transform: scaleY(0);
     transition: transform 0.5s ease;
   }
@@ -43,7 +43,7 @@
     transform: scaleY(1);
   }
   &:hover {
-    color: $main-gold;
+    color:  $main-orangered;
   }
 }
 .isActive {
