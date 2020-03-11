@@ -11,15 +11,11 @@
 
   &__wrapper {
     width: 60%;
-    padding: 30px 0;
+    padding: 10px 0;
     background-image: url('../../assets/images/TourMap_bg.svg');
     background-position: center center;
     background-size: cover;
     margin: 0 auto;
-  }
-  &__program {
-    list-style-type: none;
-    padding: 0;
   }
 }
 .on-screen {
