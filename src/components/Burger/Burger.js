@@ -1,17 +1,14 @@
 import React from 'react';
 
-import './burger.scss';
+import './Burger.scss';
 
 const Burger = ({ state, toggle }) => {
-  return state ? (
+  const getClass = state =>
+    state ? 'Burger__controller is-open' : 'Burger__controller is-close';
+  return (
     <div className="TourMap__Burger Burger" onClick={toggle}>
-      <div className="Burger__controller is-open" />
-      <div className="Burger__controller is-open" />
-    </div>
-  ) : (
-    <div className="TourMap__Burger Burger" onClick={toggle}>
-      <div className="Burger__controller is-close" />
-      <div className="Burger__controller is-close" />
+      <div className={getClass(state)} />
+      <div className={getClass(state)} />
     </div>
   );
 };
