@@ -1,7 +1,6 @@
 @import '../../palette.scss';
 
 .ThemeChange {
-  position: relative;
   &__label {
     display: inline-block;
     position: relative;
@@ -51,13 +50,20 @@
   }
   &__image {
     width: 300px;
-    transform:translateX(-1000px);
-    transition:2s;
+    position: absolute;
+    left: -2000px;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+    animation: dance 0.5s infinite linear;
   }
 }
 .MemberPage__checkbox {
   -webkit-appearance: none;
   display: none;
+  &:checked ~ .MemberPage--0 {
+    background-color: $main-orangered;
+  }
   &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__label:before {
     background-color: #fff;
   }
@@ -75,11 +81,28 @@
     right: -45px;
     background-color: rgb(47, 229, 83);
   }
-  &:checked ~ .MemberPage--0 {
-    background-color: $main-gold;
-  }
+
   &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__image {
-    transform:translateX(0);
-    transition:2s;
+    left: 25%;
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
