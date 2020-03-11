@@ -10,6 +10,10 @@
   @include phone {
     height: -webkit-fill-available;
   }
+
+  @include tablet {
+    height: -webkit-fill-available;
+  }
 }
 
 .Content__item--sidemenu {

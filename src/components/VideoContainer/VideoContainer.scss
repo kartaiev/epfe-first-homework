@@ -49,9 +49,20 @@
     @include phone {
       display: none;
     }
+    
+    @include tablet {
+      display: none;
+    }
   }
 
   @include phone {
+    background: url('../../images/poster.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include tablet {
     background: url('../../images/poster.png');
     background-position: center;
     background-repeat: no-repeat;

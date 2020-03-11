@@ -38,6 +38,10 @@
       @include phone {
         font-size: 1.2rem;
       }
+
+      @include tablet {
+        font-size: 3rem;
+      }
     }
 
     .slider__button {

@@ -1,5 +1,6 @@
 @import '../../palette.scss';
 @import '../../reset_module.scss';
+@import '../../media_mixins.scss';
 
 body {
   background-color: $main-black;
@@ -37,6 +38,10 @@ body {
     width: 80%;
     padding: 15% 0 0 20%;
     color: $main-white;
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -50,6 +55,11 @@ body {
     padding-bottom: 40px;
     font-size: 1.5rem;
     font-weight: 500;
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__instrument {
@@ -63,5 +73,12 @@ body {
 
   &__copyright-wrapper {
     margin: 50px 0;
+  }
+
+  &__contacts {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

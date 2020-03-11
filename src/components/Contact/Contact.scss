@@ -1,8 +1,13 @@
 @import '../../palette.scss';
+@import '../../media_mixins.scss';
 
 .Contact__divider {
   padding: 0 1rem;
   color: $main-silver;
+
+  @include phone {
+    display: none;
+  }
 }
 
 .Contact__link {

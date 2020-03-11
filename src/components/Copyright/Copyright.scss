@@ -38,6 +38,10 @@
 
       width: 95px;
       height: 2px;
+
+      @include tablet {
+        display: none;
+      }
     }
 
     &::after {
