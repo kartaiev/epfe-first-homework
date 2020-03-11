@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
+import Sound from 'react-sound';
 
 import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
+import songs from '../../assets/audio';
 
-export default function SliderAssets() {
+const SliderAssets = ({ state, toggle }) => {
   const {
     paginate,
     index,
@@ -51,8 +53,12 @@ export default function SliderAssets() {
         }}
       >
         <div className="slider__trackname">{songInfo[index].trackName}</div>
-
+        <Sound
+          url={songs[index]}
+          playStatus={state ? Sound.status.PLAYING : Sound.status.STOPPED}
+        />
         <motion.button
+          onClick={toggle}
           whileHover={{ scale: 1.2, x: 5 }}
           variants={titleVariants}
           key={slide}
@@ -69,7 +75,7 @@ export default function SliderAssets() {
           type="button"
           className="slider__button button"
         >
-          Play
+          {state ? <span>Stop</span> : <span>Play</span>}
         </motion.button>
       </motion.div>
 
@@ -93,4 +99,6 @@ export default function SliderAssets() {
       </motion.svg>
     </div>
   );
-}
+};
+
+export default SliderAssets;
