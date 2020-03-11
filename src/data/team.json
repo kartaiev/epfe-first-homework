@@ -2,7 +2,8 @@
   {
     "id": 0,
     "name": "Maxym",
-    "instrument": "guitar",
+    "instrument": "producer",
+    "icon": "album.svg",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
@@ -12,7 +13,8 @@
   {
     "id": 1,
     "name": "Dmytro",
-    "instrument": "drums",
+    "instrument": "vocal",
+    "icon": "vocal.svg",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
@@ -22,7 +24,8 @@
   {
     "id": 2,
     "name": "Vladimir",
-    "instrument": "vocal",
+    "instrument": "base",
+    "icon": "guitar.svg",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
@@ -33,6 +36,7 @@
     "id": 3,
     "name": "Iryna",
     "instrument": "drums",
+    "icon": "drumstick.svg",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
@@ -42,7 +46,8 @@
   {
     "id": 4,
     "name": "Denys",
-    "instrument": "guitar",
+    "instrument": "electroguitar",
+    "icon": "electric-guitar.svg",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
