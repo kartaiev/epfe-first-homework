@@ -14,31 +14,31 @@ $deg-end: 0deg;
   animation-name: team_member;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}
 
-.Team__member--delay-0 {
-  animation-duration: 300ms;
-  animation-delay: 0ms;
-}
-.Team__member--delay-1 {
-  animation-duration: 300ms;
-  animation-delay: 150ms;
-}
-.Team__member--delay-2 {
-  animation-duration: 300ms;
-  animation-delay: 300ms;
-}
-.Team__member--delay-3 {
-  animation-duration: 300ms;
-  animation-delay: 450ms;
-}
-.Team__member--delay-4 {
-  animation-duration: 300ms;
-  animation-delay: 600ms;
-}
-.Team__member--delay-5 {
-  animation-duration: 300ms;
-  animation-delay: 750ms;
+  &--delay-0 {
+    animation-duration: 300ms;
+    animation-delay: 0ms;
+  }
+  &--delay-1 {
+    animation-duration: 300ms;
+    animation-delay: 150ms;
+  }
+  &--delay-2 {
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+  }
+  &--delay-3 {
+    animation-duration: 300ms;
+    animation-delay: 450ms;
+  }
+  &--delay-4 {
+    animation-duration: 300ms;
+    animation-delay: 600ms;
+  }
+  &--delay-5 {
+    animation-duration: 300ms;
+    animation-delay: 750ms;
+  }
 }
 @keyframes team_member {
   0% {
