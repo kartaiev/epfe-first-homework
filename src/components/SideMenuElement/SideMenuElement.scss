@@ -14,6 +14,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transform: rotate(270deg);
+
   &::before,
   &::after {
     content: '';
@@ -46,5 +47,5 @@
   }
 }
 .isActive {
-  border-bottom: 1px solid #fff;
+  color: $main-orangered;
 }
