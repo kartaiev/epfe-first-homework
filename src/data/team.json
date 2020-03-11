@@ -1,52 +1,101 @@
 [
   {
     "id": 0,
-    "name": "Maxym",
+    "name": "Max",
     "instrument": "guitar",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
       "1orem ipsum dolor sit amet consectetur adipisicing elit2"
+    ],
+    "contacts": [
+      {
+        "type": "linkedin",
+        "link": "https://www.linkedin.com/in/maksym-koval-781b051a3/"
+      },
+      { "type": "github", "link": "https://github.com/maxonchil" },
+      { "type": "personal", "link": "https://www.instagram.com/be3x_voice/" }
     ]
   },
   {
     "id": 1,
-    "name": "Dmytro",
+    "name": "Dima",
     "instrument": "drums",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
       "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ],
+    "contacts": [
+      {
+        "type": "linkedin",
+        "link": "https://www.linkedin.com/in/dmitry-kashmensky-b5702079/"
+      },
+      { "type": "github", "link": "https://github.com/dkashmensky" },
+      {
+        "type": "personal",
+        "link": "https://www.facebook.com/dmitriy.kashmenskiy"
+      }
     ]
   },
   {
     "id": 2,
-    "name": "Vladimir",
+    "name": "Vlad",
     "instrument": "vocal",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
       "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ],
+    "contacts": [
+      {
+        "type": "linkedin",
+        "link": "https://www.linkedin.com/in/vladimir-kartaiev-89221a46/"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/kartaiev"
+      },
+      {
+        "type": "personal",
+        "link": "https://www.facebook.com/kartayev/"
+      }
     ]
   },
   {
     "id": 3,
-    "name": "Iryna",
+    "name": "Ira",
     "instrument": "drums",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
       "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ],
+    "contacts": [
+      {
+        "type": "linkedin",
+        "link": "https://www.linkedin.com/in/irina-kozlovskaya-2003b04/"
+      },
+      { "type": "github", "link": "http://github.com/stri4ka" },
+      { "type": "personal", "link": "" }
     ]
   },
   {
     "id": 4,
-    "name": "Denys",
+    "name": "Dan",
     "instrument": "guitar",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
       "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+    ],
+    "contacts": [
+      {
+        "type": "linkedin",
+        "link": "https://www.linkedin.com/in/denys-stetsenko-6300481a4/"
+      },
+      { "type": "github", "link": "https://github.com/oddestdan" },
+      { "type": "personal", "link": "http://instagram.com/oddestdan" }
     ]
   }
 ]
