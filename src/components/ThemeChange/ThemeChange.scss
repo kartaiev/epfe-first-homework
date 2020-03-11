@@ -1,0 +1,85 @@
+@import '../../palette.scss';
+
+.ThemeChange {
+  position: relative;
+  &__label {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      color: $main-orangered;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -25px;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: $main-orangered;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: -45px;
+      width: 40px;
+      height: 20px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      background-color: $main-white;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+  }
+  &__image {
+    width: 300px;
+    transform:translateX(-1000px);
+    transition:2s;
+  }
+}
+.MemberPage__checkbox {
+  -webkit-appearance: none;
+  display: none;
+  &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__label:before {
+    background-color: #fff;
+  }
+  &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__label {
+    &:hover {
+      color: rgb(47, 229, 83);
+    }
+  }
+  &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__label:after {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    right: -45px;
+    background-color: rgb(47, 229, 83);
+  }
+  &:checked ~ .MemberPage--0 {
+    background-color: $main-gold;
+  }
+  &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__image {
+    transform:translateX(0);
+    transition:2s;
+  }
+}

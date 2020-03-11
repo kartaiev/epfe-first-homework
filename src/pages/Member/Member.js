@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Copyright from '../../components/Copyright/Copyright';
 import './Member.scss';
-import MemberPageInput from '../../components/MemberPageInput/MemberPageInput';
+import ThemeChange from '../../components/ThemeChange/ThemeChange';
 
 import team from '../../data/team.json';
 
@@ -19,7 +19,11 @@ const Member = props => {
 
   return (
     <div className="MemberPage__outer">
-      <MemberPageInput />
+      <input
+        id="themeChange"
+        className="MemberPage__checkbox"
+        type="checkbox"
+      />
       <div className={`MemberPage MemberPage--${id}`}>
         <SideMenuContainer />
         <div className="MemberPage__wrapper">
@@ -33,7 +37,7 @@ const Member = props => {
               </p>
             ))}
           </article>
-          <label className="MemberPage__label" htmlFor="themeChange">Rock mode</label>
+          <ThemeChange />
         </div>
         <div className="MemberPage__copyright-wrapper">
           <Copyright />
