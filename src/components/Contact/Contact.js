@@ -7,7 +7,12 @@ const Contact = ({ info }) => {
     info.link !== '' && (
       <>
         <span className="Contact__divider">|</span>
-        <a className="Contact__link" href={info.link}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="Contact__link"
+          href={info.link}
+        >
           {info.type}
         </a>
       </>
