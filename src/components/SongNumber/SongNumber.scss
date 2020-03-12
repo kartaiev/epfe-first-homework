@@ -1,6 +1,6 @@
 @import '../../palette.scss';
 @import '../../media_mixins.scss';
-
+$spacing: 7px;
 .SongNumber {
   align-items: center;
   color: $main-white;
@@ -9,8 +9,6 @@
   @include phone {
     display: none;
   }
-
-  $spacing: 7px;
 
   &__current {
     bottom: $spacing;

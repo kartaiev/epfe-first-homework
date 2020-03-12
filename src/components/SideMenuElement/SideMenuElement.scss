@@ -1,44 +1,51 @@
 @import '../../palette.scss';
+@import '../../media_mixins.scss';
 
 .SideMenuElement {
   align-items: center;
   display: flex;
   justify-content: center;
+  &__link {
+    color: $main-white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    position: relative;
+    @include tablet {
+      font-size: 1rem;
+    }
+    @include hugescreen {
+      font-size: 1.5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 0;
+      right: 0;
+      height: 3px;
+      will-change: transform;
+      background-color: $main-black;
+      transform-origin: center right;
+      transition: 0.5s ease;
+      transform: scale(0);
+    }
+
+    &:hover {
+      color: $main-orangered;
+    }
+
+    &:hover::before {
+      transform-origin: center left;
+      transform: scale(1);
+    }
+  }
 }
 
-.SideMenuElement__link {
-  color: $main-white;
-  font-size: 0.8em;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transform: rotate(270deg);
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    height: 3px;
-    will-change: transform;
-    background-color: $main-black;
-    transform-origin: center right;
-    transition: 0.5s ease;
-    transform: scale(0);
-  }
-
-  &:hover {
-    color: $main-orangered;
-  }
-
-  &:hover::before {
-    transform-origin: center left;
-    transform: scale(1);
-  }
-}
 .isActive {
   color: $main-orangered;
 }

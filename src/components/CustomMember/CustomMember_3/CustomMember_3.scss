@@ -9,7 +9,15 @@
   transition: all 0.5s cubic-bezier(0, 0.28, 0, 1);
   position: relative;
   margin-bottom: 20px;
-
+  &:hover:after {
+    animation: bar4 0.8s infinite;
+  }
+  &:hover > div:last-of-type {
+    animation: bar2 0.8s infinite;
+  }
+  &:hover > div:first-of-type {
+    animation: bar3 0.8s infinite;
+  }
   &:before,
   &:after,
   & div {
@@ -70,9 +78,7 @@
     width: 10px;
   }
 }
-.MemberPage__name--beat:hover > div:last-of-type {
-  animation: bar2 0.8s infinite;
-}
+
 @keyframes bar2 {
   0% {
     width: 50px;
@@ -98,9 +104,6 @@
   100% {
     width: 50px;
   }
-}
-.MemberPage__name--beat:hover > div:first-of-type {
-  animation: bar3 0.8s infinite;
 }
 
 @keyframes bar3 {
@@ -128,9 +131,6 @@
   100% {
     width: 30px;
   }
-}
-.MemberPage__name--beat:hover:after {
-  animation: bar4 0.8s infinite;
 }
 
 @keyframes bar4 {

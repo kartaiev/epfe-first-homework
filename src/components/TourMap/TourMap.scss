@@ -17,6 +17,7 @@
     background-position: center center;
     background-size: cover;
     margin: 0 auto;
+    
 
     @include phone {
       background-position: top center;
@@ -48,18 +49,10 @@
 .on-screen {
   top: 0;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 .off-screen {
-  top: -2000px;
+  top: -3000px;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 .TourMap .TourMap__logo {
   display: block;
