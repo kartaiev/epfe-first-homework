@@ -11,8 +11,14 @@ import teamPics from '../../assets/images/membersPics';
 import Toggle from '../../utilits/toggle';
 import song from '../../assets/audio/Highway.mp3';
 import musicFunc from '../../utilits/musicFunc';
+import { useState } from 'react';
 
 const Member = props => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const play = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   const {
     match: {
       params: { id },
@@ -23,44 +29,36 @@ const Member = props => {
   const memberPic = teamPics[id];
 
   return (
-    <Toggle>
-      {({ state, toggle }) => (
-        <>
-          <div
-            onClick={+id === 2 ? toggle : null}
-            className={`MemberPage MemberPage--${id}`}
-            style={{ backgroundImage: `url(${memberPic})` }}
-          >
-            {+id === 2 && musicFunc(song, toggle, state)}
-            <SideMenuContainer />
-            <div className="MemberPage__wrapper">
-              <h1 className="MemberPage__name">{member.name}</h1>
-              <h2 className="MemberPage__info">
-                <span className="MemberPage__instrument">
-                  {member.instrument}
-                </span>
-                <span className="MemberPage__contacts Contact">
-                  {member.contacts.map(contact => (
-                    <Contact key={contact.link} info={contact} />
-                  ))}
-                </span>
-              </h2>
-              <article>
-                {member.descriptions.map((description, i) => (
-                  // eslint-disable-next-line react/no-array-index-key
-                  <p key={i} className="MemberPage__description">
-                    {description}
-                  </p>
-                ))}
-              </article>
-            </div>
-            <div className="MemberPage__copyright-wrapper">
-              <Copyright />
-            </div>
-          </div>
-        </>
-      )}
-    </Toggle>
+    <div
+      onClick={+id === 2 ? play : null}
+      className={`MemberPage MemberPage--${id}`}
+      style={{ backgroundImage: `url(${memberPic})` }}
+    >
+      {+id === 2 && musicFunc(song, play, isPlaying)}
+      <SideMenuContainer />
+      <div className="MemberPage__wrapper">
+        <h1 className="MemberPage__name">{member.name}</h1>
+        <h2 className="MemberPage__info">
+          <span className="MemberPage__instrument">{member.instrument}</span>
+          <span className="MemberPage__contacts Contact">
+            {member.contacts.map(contact => (
+              <Contact key={contact.link} info={contact} />
+            ))}
+          </span>
+        </h2>
+        <article>
+          {member.descriptions.map((description, i) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <p key={i} className="MemberPage__description">
+              {description}
+            </p>
+          ))}
+        </article>
+      </div>
+      <div className="MemberPage__copyright-wrapper">
+        <Copyright />
+      </div>
+    </div>
   );
 };
 
