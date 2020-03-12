@@ -14,36 +14,29 @@
   text-decoration: none;
   text-transform: uppercase;
   transform: rotate(270deg);
+  position: relative;
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: $main-orangered;
-    transform: scaleY(0);
-    transition: transform 0.5s ease;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    will-change: transform;
+    background-color: $main-black;
+    transform-origin: center right;
+    transition: 0.5s ease;
+    transform: scale(0);
   }
-  &::before {
-    left: -10px;
-    transform-origin: center top;
-  }
-  &:hover::before {
-    transform-origin: center bottom;
-    transform: scaleY(1);
-  }
-  &::after {
-    right: -10px;
-    transform-origin: center bottom;
-  }
-  &:hover::after {
-    transform-origin: center top;
-    transform: scaleY(1);
-  }
+
   &:hover {
-    color:  $main-orangered;
+    color: $main-orangered;
+  }
+
+  &:hover::before {
+    transform-origin: center left;
+    transform: scale(1);
   }
 }
 .isActive {
