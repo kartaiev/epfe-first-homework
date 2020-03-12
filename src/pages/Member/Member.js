@@ -36,7 +36,8 @@ const Member = props => {
 
   const checkCustom = index => Number(id) === index; // +id === <index>
   const customClass = (state, index) => {
-    return state
+    // Please don't kill us for this :3
+    return state && !checkCustom(2)
       ? `MemberPage MemberPage--${index} active-mod`
       : `MemberPage MemberPage--${index}`;
   };
