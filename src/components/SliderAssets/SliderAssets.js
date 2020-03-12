@@ -4,7 +4,8 @@ import Sound from 'react-sound';
 
 import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
-import songs from '../../assets/audio';
+import songs from '../../assets/audio/sliderAudio';
+import musicFunc from '../../utilits/musicFunc';
 
 const SliderAssets = ({ isPlaying, toggle }) => {
   const {
@@ -53,10 +54,7 @@ const SliderAssets = ({ isPlaying, toggle }) => {
         }}
       >
         <div className="slider__trackname">{songInfo[index].trackName}</div>
-        <Sound
-          url={songs[index]}
-          playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
-        />
+        {musicFunc(songs[index], toggle, isPlaying)}
         <motion.button
           onClick={toggle}
           whileHover={{ scale: 1.2, x: 5 }}

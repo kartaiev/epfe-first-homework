@@ -1,5 +1,7 @@
 {
   "datestyle": "medium",
+  "hour": "numeric",
+  "minute": "numeric",
   "day": "2-digit",
   "year": "numeric",
   "month": "short",

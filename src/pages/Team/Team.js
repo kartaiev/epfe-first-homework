@@ -47,7 +47,7 @@ const Team = () => {
     <div className="TeamPage block">
       <aside className="TeamPage__aside aside">
         <div className="aside__logo-container">
-          <Logo classes="TeamPage__logo"/>
+          <Logo classes="TeamPage__logo" />
         </div>
         <SideMenuContainer />
       </aside>
