@@ -39,7 +39,7 @@ const SliderAssets = ({ isPlaying, toggle }) => {
       </motion.svg>
 
       <motion.div
-        className="SliderAssets-slider"
+        className="SliderAssets__slider slider"
         variants={titleVariants}
         key={slide}
         custom={direction}
