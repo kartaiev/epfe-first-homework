@@ -1,6 +1,12 @@
 @import '../../palette.scss';
 @import '../../media_mixins.scss';
 
+@mixin pulse($color, $scale, $opacity) {
+  border: 2px solid $color;
+  transform: scale($scale);
+  transform-origin: center;
+  opacity: $opacity;
+}
 .Contact__divider {
   padding: 0 1rem;
   color: $main-silver;
@@ -12,4 +18,92 @@
 
 .Contact__link {
   color: $main-orangered;
+  position: relative;
+  padding: 5px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    animation: colored 0.5s forwards;
+  }
+  &:hover:before {
+    animation: pulsing 0.5s forwards;
+  }
+}
+
+@keyframes colored {
+  0% {
+    color: $main-orangered;
+  }
+  10% {
+    color: rgba(253, 104, 65, 1);
+  }
+  20% {
+    color: rgba(253, 125, 91, 1);
+  }
+  30% {
+    color: rgba(253, 147, 120, 1);
+  }
+  40% {
+    color: rgba(253, 173, 152, 1);
+  }
+  50% {
+    color: $main-white;
+  }
+  60% {
+    color: rgba(237, 237, 237, 1);
+  }
+  70% {
+    color: rgba(227, 227, 227, 1);
+  }
+  80% {
+    color: rgba(217, 217, 217, 1);
+  }
+  90% {
+    color: rgba(207, 207, 207, 1);
+  }
+  100% {
+    color: $main-silver;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    @include pulse($main-orangered, 1, 1);
+  }
+  10% {
+    @include pulse(rgba(253, 104, 65, 1), 1.025, 0.9);
+  }
+  20% {
+    @include pulse(rgba(253, 125, 91, 1), 1.05, 0.8);
+  }
+  30% {
+    @include pulse(rgba(253, 147, 120, 1), 1.075, 0.7);
+  }
+  40% {
+    @include pulse(rgba(253, 173, 152, 1), 1.1, 0.6);
+  }
+  50% {
+    @include pulse($main-white, 1.125, 0.5);
+  }
+  60% {
+    @include pulse(rgba(237, 227, 237, 1), 1.15, 0.4);
+  }
+  70% {
+    @include pulse(rgba(227, 227, 227, 1), 1.175, 0.3);
+  }
+  80% {
+    @include pulse(rgba(217, 217, 217, 1), 1.2, 0.2);
+  }
+  90% {
+    @include pulse(rgba(207, 207, 207, 1), 1.225, 0.1);
+  }
+  100% {
+    @include pulse($main-silver, 1.25, 0);
+  }
 }

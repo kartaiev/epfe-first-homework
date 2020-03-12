@@ -7,6 +7,7 @@ import Contact from '../../components/Contact/Contact';
 import './Member.scss';
 
 import team from '../../data/team.json';
+import teamPics from '../../assets/images/membersPics';
 
 const Member = props => {
   const {
@@ -16,9 +17,13 @@ const Member = props => {
   } = props;
 
   const member = team[id];
+  const memberPic = teamPics[id];
 
   return (
-    <div className={`MemberPage MemberPage--${id}`}>
+    <div
+      className={`MemberPage MemberPage--${id}`}
+      style={{ backgroundImage: `url(${memberPic})` }}
+    >
       <SideMenuContainer />
       <div className="MemberPage__wrapper">
         <h1 className="MemberPage__name">{member.name}</h1>
