@@ -9,6 +9,9 @@ import './Member.scss';
 import team from '../../data/team.json';
 import teamPics from '../../assets/images/membersPics';
 
+// Member Customizations
+import CustomMember_4 from '../../components/CustomMember/CustomMember_4/CustomMember_4';
+
 const Member = props => {
   const {
     match: {
@@ -19,6 +22,8 @@ const Member = props => {
   const member = team[id];
   const memberPic = teamPics[id];
 
+  const isCustom = index => Number(id) === index;
+
   return (
     <div
       className={`MemberPage MemberPage--${id}`}
@@ -26,7 +31,9 @@ const Member = props => {
     >
       <SideMenuContainer />
       <div className="MemberPage__wrapper">
-        <h1 className="MemberPage__name">{member.name}</h1>
+        <h1 className="MemberPage__name">
+          {isCustom(4) ? <CustomMember_4 name={member.name} /> : member.name}
+        </h1>
         <h2 className="MemberPage__info">
           <span className="MemberPage__instrument">{member.instrument}</span>
           <span className="MemberPage__contacts Contact">
