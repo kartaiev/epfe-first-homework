@@ -17,6 +17,7 @@ import musicFunc from '../../utilits/musicFunc';
 
 // Member Customizations
 import CustomMember_0 from '../../components/CustomMember/CustomMember_0/CustomMember_0';
+import CustomMember_1 from '../../components/CustomMember/CustomMember_1/CustomMember_1';
 import CustomMember_3 from '../../components/CustomMember/CustomMember_3/CustomMember_3';
 import CustomMember_4 from '../../components/CustomMember/CustomMember_4/CustomMember_4';
 
@@ -53,7 +54,9 @@ const Member = props => {
             {isCustom(2) && musicFunc(song, toggle, state)}
             <SideMenuContainer />
             <div className="MemberPage__wrapper">
-              {isCustom(3) ? (
+              {isCustom(1) ? (
+                <CustomMember_1 name={member.name} />
+              ) : isCustom(3) ? (
                 <CustomMember_3 />
               ) : (
                 <h1 className="MemberPage__name">
