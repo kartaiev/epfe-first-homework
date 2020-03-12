@@ -1,7 +1,7 @@
-import pic1 from './angus_young_.jpg';
-import pic2 from './axl_rose.jpg';
-import pic3 from './brian_jonson.jpg';
-import pic4 from './drummer_lady.png';
-import pic5 from './malcolm_young.jpg';
+import pic0 from './photo-0.png';
+import pic1 from './photo-1.png';
+import pic2 from './photo-2.png';
+import pic3 from './photo-3.png';
+import pic4 from './photo-4.png';
 
-export default [pic1, pic2, pic3, pic4, pic5];
+export default [pic0, pic1, pic2, pic3, pic4];
