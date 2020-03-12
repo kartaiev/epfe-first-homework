@@ -1,9 +1,14 @@
 @import '../../palette.scss';
+@import '../../media_mixins.scss';
 
 .SongNumber {
   align-items: center;
   color: $main-white;
   display: flex;
+
+  @include phone {
+    display: none;
+  }
 
   $spacing: 7px;
 

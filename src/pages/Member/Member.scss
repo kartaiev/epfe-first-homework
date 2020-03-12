@@ -1,5 +1,6 @@
 @import '../../palette.scss';
 @import '../../reset_module.scss';
+@import '../../media_mixins.scss';
 
 body {
   background-color: $main-black;
@@ -17,57 +18,51 @@ body {
   background-position: right top;
   background-size: contain;
 
+  &__wrapper {
+    width: 80%;
+    padding: 15% 0 0 20%;
+    color: $main-white;
 
-  &--0 {
-    background-image: url('../../assets/images/brian_jonson.jpg');
-  }
-  &--1 {
-    background-image: url('../../assets/images/malcolm_young.jpg');
-  }
-  &--2 {
-    background-image: url('../../assets/images/angus_young_.jpg');
-  }
-  &--3 {
-    background-image: url('../../assets/images/axl_rose.jpg');
-  }
-  &--4 {
-    background-image: url('../../assets/images/drummer_lady.png');
+    @include phone {
+      width: 100%;
+    }
   }
 
-.MemberPage__wrapper {
+  &__name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $main-white;
+    text-transform: uppercase;
+  }
 
-  width: 80%;
-  padding: 15% 0 0 20%;
-  color: $main-white;
+  &__info {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
 
-}
-.MemberPage__image {
-  position: absolute;
-  top: 0;
-  right: 65px;
-  width: 500px;
-}
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
-.MemberPage__title {
-  font-size: 4rem;
-  font-weight: 700;
-  color: $main-white;
-  text-transform: uppercase;
-}
+  &__instrument {
+    color: $main-silver;
+    text-transform: uppercase;
+  }
 
-.MemberPage__subtitle {
-  padding-bottom: 40px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: $main-orangered;
-  text-transform: uppercase;
-}
+  &__description {
+    padding-bottom: 30px;
+  }
 
-.MemberPage__description {
-  padding-bottom: 30px;
-}
+  &__copyright-wrapper {
+    margin: 50px 0;
+  }
 
-.MemberPage__copyright-wrapper {
-  margin: 50px 0;
-}
+  &__contacts {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

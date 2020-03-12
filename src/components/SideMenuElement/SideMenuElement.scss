@@ -14,4 +14,31 @@
   text-decoration: none;
   text-transform: uppercase;
   transform: rotate(270deg);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    will-change: transform;
+    background-color: $main-black;
+    transform-origin: center right;
+    transition: 0.5s ease;
+    transform: scale(0);
+  }
+
+  &:hover {
+    color: $main-orangered;
+  }
+
+  &:hover::before {
+    transform-origin: center left;
+    transform: scale(1);
+  }
+}
+.isActive {
+  color: $main-orangered;
 }

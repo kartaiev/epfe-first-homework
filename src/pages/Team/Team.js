@@ -5,7 +5,8 @@ import MemberCard from '../../components/MemberCard/MemberCard';
 
 import './Team.scss';
 import './TeamAnimations.scss';
-
+import teamPics from '../../assets/images/membersPics';
+import instruments from '../../assets/images/instruments';
 import team from '../../data/team.json';
 
 let teamListRef;
@@ -17,8 +18,8 @@ const teamMembers = team.map(member => (
     key={member.id}
     id={member.id}
     name={member.name}
-    image={member.image}
-    instrument={member.instrument}
+    image={teamPics[member.id]}
+    instrument={instruments[member.id]}
   />
 ));
 
@@ -46,7 +47,7 @@ const Team = () => {
     <div className="TeamPage block">
       <aside className="TeamPage__aside aside">
         <div className="aside__logo-container">
-          <Logo />
+          <Logo classes="TeamPage__logo" />
         </div>
         <SideMenuContainer />
       </aside>

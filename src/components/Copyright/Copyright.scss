@@ -1,10 +1,16 @@
 @import '../../palette.scss';
+@import '../../media_mixins.scss';
 
 .Copyright {
   width: fit-content;
   display: flex;
   align-items: center;
   margin-left: auto;
+
+  @include phone {
+    display: none;
+  }
+
   &__author {
     position: relative;
 
@@ -32,6 +38,10 @@
 
       width: 95px;
       height: 2px;
+
+      @include tablet {
+        display: none;
+      }
     }
 
     &::after {

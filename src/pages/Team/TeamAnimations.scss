@@ -1,3 +1,7 @@
+$deg-start: -90deg;
+$deg-mid: 50deg;
+$deg-end: 0deg;
+
 .Team__list {
   -webkit-perspective: 1000px;
   perspective: 1000px;
@@ -5,111 +9,47 @@
 
 .Team__member {
   opacity: 0;
-  -webkit-transform-origin: left center;
   transform-origin: left center;
-}
+  
+  animation-name: team_member;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 
-.Team__member--delay-0 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: -150ms;
-  animation-delay: 0ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  &--delay-0 {
+    animation-duration: 300ms;
+    animation-delay: 0ms;
+  }
+  &--delay-1 {
+    animation-duration: 300ms;
+    animation-delay: 150ms;
+  }
+  &--delay-2 {
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+  }
+  &--delay-3 {
+    animation-duration: 300ms;
+    animation-delay: 450ms;
+  }
+  &--delay-4 {
+    animation-duration: 300ms;
+    animation-delay: 600ms;
+  }
+  &--delay-5 {
+    animation-duration: 300ms;
+    animation-delay: 750ms;
+  }
 }
-.Team__member--delay-1 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 0ms;
-  animation-delay: 150ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.Team__member--delay-2 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 150ms;
-  animation-delay: 300ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.Team__member--delay-3 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 300ms;
-  animation-delay: 450ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.Team__member--delay-4 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 450ms;
-  animation-delay: 600ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.Team__member--delay-5 {
-  -webkit-animation-name: menu2;
-  animation-name: menu2;
-  -webkit-animation-duration: 300ms;
-  animation-duration: 300ms;
-  -webkit-animation-delay: 600ms;
-  animation-delay: 750ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-@-webkit-keyframes menu2 {
+@keyframes team_member {
   0% {
     opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
+    transform: rotateY($deg-start);
   }
   60% {
-    -webkit-transform: rotateY(50deg);
-    transform: rotateY(50deg);
+    transform: rotateY($deg-mid);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-}
-@keyframes menu2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
-  }
-  60% {
-    -webkit-transform: rotateY(50deg);
-    transform: rotateY(50deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
+    transform: rotateY($deg-end);
   }
 }

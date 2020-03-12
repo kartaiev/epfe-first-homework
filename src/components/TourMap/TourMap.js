@@ -5,7 +5,7 @@ import tourDates from '../../data/TourDates.json';
 import './TourMap.scss';
 import Logo from '../Logo/Logo';
 
-export default function TourMap({ state, toogle }) {
+export default function TourMap({ state }) {
   const getClass = state =>
     state ? 'TourMap on-screen' : 'TourMap off-screen';
   return (

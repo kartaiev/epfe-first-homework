@@ -1,3 +1,4 @@
+@import '../../media_mixins.scss';
 @import '../../palette.scss';
 
 .TourMap {
@@ -11,15 +12,37 @@
 
   &__wrapper {
     width: 60%;
-    padding: 30px 0;
+    padding: 10px 0;
     background-image: url('../../assets/images/TourMap_bg.svg');
     background-position: center center;
     background-size: cover;
     margin: 0 auto;
+
+    @include phone {
+      background-position: top center;
+      background-repeat: repeat;
+      padding-top:100px;
+      width: 100%;
+    }
+
+    @include tablet {
+      background-position: top center;
+      background-repeat: repeat;
+      padding-top:100px;
+      width: 100%;
+    }
   }
   &__program {
     list-style-type: none;
     padding: 0;
+  }
+
+  @include phone {
+    height: auto;
+  }
+
+  @include tablet {
+    height: auto;
   }
 }
 .on-screen {
@@ -31,7 +54,7 @@
   -o-transition: 0.5s;
 }
 .off-screen {
-  top: -1000px;
+  top: -2000px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
