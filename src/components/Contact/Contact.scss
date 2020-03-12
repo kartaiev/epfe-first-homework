@@ -7,4 +7,43 @@
 
 .Contact__link {
   color: $main-orangered;
+  &:hover {
+    animation: colored .5s forwards;
+  }
+}
+
+@keyframes colored {
+  0% {
+    color: $main-orangered;
+  }
+  10% {
+    color: rgba(253, 104, 65, 1);
+  }
+  20% {
+    color: rgba(253, 125, 91, 1);
+  }
+  30% {
+    color: rgba(253, 147, 120, 1);
+  }
+  40% {
+    color: rgba(253, 173, 152, 1);
+  }
+  50% {
+    color: $main-white;
+  }
+  60% {
+    color: rgba(233, 233, 233, 1);
+  }
+  70% {
+    color: rgba(227, 227, 227, 1);
+  }
+  80% {
+    color: rgba(217, 217, 217, 1);
+  }
+  90% {
+    color: rgba(207, 207, 207, 1);
+  }
+  100% {
+    color: $main-silver;
+  }
 }
