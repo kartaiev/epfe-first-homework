@@ -9,7 +9,9 @@ const Central = () => {
     <div className="Central">
       {/* <SideMenuContainer /> */}
       <Toggle>
-        {({ state, toggle }) => <SliderAssets state={state} toggle={toggle} />}
+        {({ state: isPlaying, toggle }) => (
+          <SliderAssets isPlaying={isPlaying} toggle={toggle} />
+        )}
       </Toggle>
       {/* <div className="Central__invisible-block"> */}
       {/* <SideMenuContainer /> */}
