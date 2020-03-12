@@ -46,7 +46,7 @@ const MemberCard = props => {
         initial="rest"
         whileHover="hover"
         animate="rest"
-        className={` MemberCard MemberCard--${id}`}
+        className="MemberCard"
         id={id}
       >
         <motion.span variants={nameVariants} className="MemberCard__name">
