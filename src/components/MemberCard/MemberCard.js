@@ -39,14 +39,14 @@ const MemberCard = props => {
   console.log(instrument);
 
   return (
-    <Link to={`member/${id}`} className="MemberCard__link">
+    <Link to={`member/${id}`} className="MemberCard__link Team__member">
       <motion.li
         style={{ backgroundImage: `url(${image})` }}
         variants={containerVariants}
         initial="rest"
         whileHover="hover"
         animate="rest"
-        className={`Team__member MemberCard MemberCard--${id}`}
+        className={` MemberCard MemberCard--${id}`}
         id={id}
       >
         <motion.span variants={nameVariants} className="MemberCard__name">
