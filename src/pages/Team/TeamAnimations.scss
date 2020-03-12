@@ -10,7 +10,7 @@ $deg-end: 0deg;
 .Team__member {
   opacity: 0;
   transform-origin: left center;
-  
+
   animation-name: team_member;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;

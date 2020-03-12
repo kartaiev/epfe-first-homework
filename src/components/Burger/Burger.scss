@@ -1,80 +1,57 @@
 @import '../../palette.scss';
+@import '../../media_mixins.scss';
 
 .Burger {
   position: relative;
   width: 30px;
   cursor: pointer;
+
+  &__controller {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: $main-white;
+  }
   &:hover > .Burger__controller {
     background-color: $main-orangered;
   }
+  @include hugescreen {
+    width: 50px;
+  }
 }
 
-.Burger__controller {
-  position: relative;
-  height: 2px;
-  width: 100%;
-  background-color: $main-white;
+.is-close {
+  &:first-child {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transition: 0.5s;
+    transform: rotate(0);
+  }
+  &:last-child {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transition: 0.5s;
+    transform: rotate(0);
+  }
 }
 
-.is-close:first-child {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transform: rotate(0);
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -o-transform: rotate(0);
-}
-.is-close:last-child {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transform: rotate(0);
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -o-transform: rotate(0);
-}
-.is-open:first-child {
-  position: absolute;
-  top: 10px;
-  left: -2px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  background-color: $main-orangered;
-}
-.is-open:last-child {
-  position: absolute;
-  top: 10px;
-  left: -2px;
-  transition: 1s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  background-color: $main-orangered;
+.is-open {
+  &:first-child {
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    transition: 0.5s;
+    transform: rotate(45deg);
+    background-color: $main-orangered;
+  }
+  &:last-child {
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    transition: 1s;
+    transform: rotate(-45deg);
+    background-color: $main-orangered;
+  }
 }

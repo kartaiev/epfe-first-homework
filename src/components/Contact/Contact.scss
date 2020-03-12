@@ -7,32 +7,33 @@
   transform-origin: center;
   opacity: $opacity;
 }
-.Contact__divider {
-  padding: 0 1rem;
-  color: $main-silver;
+.Contact {
+  &__divider {
+    padding: 0 1rem;
+    color: $main-silver;
 
-  @include phone {
-    display: none;
+    @include phone {
+      display: none;
+    }
   }
-}
-
-.Contact__link {
-  color: $main-orangered;
-  position: relative;
-  padding: 5px;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-  &:hover {
-    animation: colored 0.5s forwards;
-  }
-  &:hover:before {
-    animation: pulsing 0.5s forwards;
+  &__link {
+    color: $main-orangered;
+    position: relative;
+    padding: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    &:hover {
+      animation: colored 0.5s forwards;
+    }
+    &:hover:before {
+      animation: pulsing 0.5s forwards;
+    }
   }
 }
 
