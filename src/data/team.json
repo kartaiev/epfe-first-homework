@@ -4,9 +4,9 @@
     "name": "Max",
     "instrument": "guitar",
     "descriptions": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
-      "1orem ipsum dolor sit amet consectetur adipisicing elit2"
+      "Max 'Mad Max' Koval - our rhythm guitar professional guru and BEM Jedi Master at the same time.",
+      "Before becoming founding member of the EP/AM band Max had a vast experience in other fields - from politics to cybersport commentator and analyst, but his passion for music and web development eventually won. And now he combines slamming invigorating chords on his beautiful guitar with following the path of front-end developer in some unknown company apparently named EPAM (what a coincidence, huh?).",
+      "Legends of his thirst for knowledge go far beyond our humble music band and maybe even beyond the known Universe. Maybe one day he will become Java backend developer and master drummer, who knows?"
     ],
     "contacts": [
       {
@@ -22,9 +22,9 @@
     "name": "Dima",
     "instrument": "vocal",
     "descriptions": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
-      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+      "Dima 'The Doom' Kashmenskiy - band's leading vocal and songwriter.",
+      "Humble and quite he became band's voice and songwriter by accident, he just happened to notice the lonely advert on the Trello board - 'Writers needed' and took a chance. Apparently he did well on the audition, and here he is - writing witty (well, as he keeps thinking) lyrics for the rock band.",
+      "STILL THINKING OF CLEVER WORDS FOR MYSELF BUT MY CREATIVE FLOW IS GONE :("
     ],
     "contacts": [
       {
@@ -43,9 +43,10 @@
     "name": "Vlad",
     "instrument": "guitar",
     "descriptions": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
-      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+      "Vladimir 'Vlad The Holy Wrath' Kartaiev - EP/AM's spiritual leader and guide.",
+      "Vlad is the master of bass guitar - he picks, and slaps, and plucks, and strumms, and chucks, and...well, you got the idea, he is very good at it.",
+      "As the most experienced member of the band he is also a producer (aka product owner). He tracks all the ideas we generate on our rehearsal studio jamming sessions (aka daily stand-up) and writes them down in his notepad (aka backlog). Later he is the person who decides what goes in our next album (aka release) and what will have to wait until better time.",
+      "Even though he is the hardrock bassist in the studio, he is a man of family at home - two awesome kids and a beatiful wife are his pride and glory."
     ],
     "contacts": [
       {
@@ -67,9 +68,9 @@
     "name": "Ira",
     "instrument": "drums",
     "descriptions": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
-      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+      "Iryna 'Iron Ira' Kozlovska - sets the group's rhythm with her drumsticks.",
+      "Having experience sailing across the world, she is no stranger to discipline and teamwork which are the vital qualities to survive on the big ship, she is responsible for assuring the quality of our work - from any particular melody to the album in general. ",
+      "Being the only girl in the band she also brings the style and sense of beauty to our little manly community. Although she seems quite and calm at first, she is a riot when appearing behind her drums slamming the hell out of her toms."
     ],
     "contacts": [
       {
@@ -85,9 +86,9 @@
     "name": "Dan",
     "instrument": "guitar",
     "descriptions": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
-      "ASKSAForem ipsum dolor sit amet consectetur adipisicing elit2"
+      "Dan 'The Dynamite' Stetsenko - lead guitar maestro and professional procrastinator.",
+      "He is the person who follows the technological fashion and decides which brand of guitar we should buy, what kind of drumstick is the best and which of the strumming techniques are trending.",
+      "Despite claiming he is the laziest person in the world he is one of the most active members in our band generating a lot of fresh ideas during our daily jams and trying to keep us on rock'n'roll track so we don't release rap album by accident."
     ],
     "contacts": [
       {
