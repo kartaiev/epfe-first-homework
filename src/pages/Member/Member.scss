@@ -45,11 +45,30 @@ body {
     width: 500px;
   }
 
+  &__wrapper {
+    width: 80%;
+    padding: 15% 0 0 20%;
+    color: $main-white;
+  }
+
+  &__name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $main-white;
+    text-transform: uppercase;
+  }
+
   &__title {
     font-size: 4rem;
     font-weight: 700;
     color: $main-white;
     text-transform: uppercase;
+  }
+
+  &__info {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   &__subtitle {
@@ -60,6 +79,11 @@ body {
     text-transform: uppercase;
   }
 
+  &__instrument {
+    color: $main-silver;
+    text-transform: uppercase;
+  }
+
   &__description {
     padding-bottom: 30px;
   }
@@ -67,5 +91,8 @@ body {
   &__copyright-wrapper {
     margin: 50px 0;
   }
-  
+
+  &__copyright-wrapper {
+    margin: 50px 0;
+  }
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Copyright from '../../components/Copyright/Copyright';
+import Contact from '../../components/Contact/Contact';
 import './Member.scss';
 import ThemeChange from '../../components/ThemeChange/ThemeChange';
 
@@ -18,6 +19,7 @@ const Member = props => {
   const member = team[id];
 
   return (
+<<<<<<< HEAD
     <div className="MemberPage__outer">
       <input
         id="themeChange"
@@ -48,7 +50,7 @@ const Member = props => {
 };
 
 Member.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
 };
 
 Member.defaultProps = {

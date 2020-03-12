@@ -5,9 +5,15 @@ import './SideMenuElement.scss';
 
 const SideMenuElement = props => {
   const { name, link } = props;
+
+  const setActive = (pagePath, elementPath) =>
+    pagePath === elementPath
+      ? 'SideMenuElement__link isActive'
+      : 'SideMenuElement__link';
+
   return (
     <div className="SideMenuElement">
-      <NavLink to={link} className="SideMenuElement__link">
+      <NavLink to={link} className={setActive(window.location.pathname, link)}>
         {name}
       </NavLink>
     </div>
