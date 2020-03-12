@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-import Sound from 'react-sound';
+// import Sound from 'react-sound';
 
 import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';

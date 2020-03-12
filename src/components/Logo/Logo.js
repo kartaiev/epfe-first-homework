@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../assets/images/EP_AM-logo.png';
 import epam from '../../assets/audio/EPAM.mp3';
 import './Logo.scss';
-import Sound from 'react-sound';
+// import Sound from 'react-sound';
 import Toggle from '../../utilits/toggle';
 import musicFunc from '../../utilits/musicFunc';
 
