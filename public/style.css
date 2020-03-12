@@ -39,3 +39,9 @@
     height: 172px;
   }
 }
+@media (max-width: 768px) {
+  .loader__logo-outlined,
+  .loader__logo-filled{
+    width: 100%;
+  }
+}
