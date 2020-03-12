@@ -7,7 +7,7 @@ body {
 }
 
 .MemberPage {
-  height: 100vh;
+  min-height: 100vh;
   min-height: 100vh;
   padding: 0 50px;
   display: flex;
@@ -22,6 +22,10 @@ body {
     width: 80%;
     padding: 15% 0 0 20%;
     color: $main-white;
+    @include phone {
+      margin-top: 90vw;
+      padding-bottom: 20px;
+    }
 
     @include phone {
       width: 100%;
@@ -53,6 +57,13 @@ body {
 
   &__description {
     padding-bottom: 30px;
+    text-shadow: 1px 1px 2px $main-black;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include hugescreen {
+      font-size: 1.5rem;
+    }
   }
 
   &__copyright-wrapper {

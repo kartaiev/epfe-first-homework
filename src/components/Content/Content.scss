@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   height: 100vh;
-  
+
   @include phone {
     height: -webkit-fill-available;
   }
@@ -14,13 +13,16 @@
   @include tablet {
     height: -webkit-fill-available;
   }
-}
-
-.Content__item--sidemenu {
-  position: fixed;
-  margin: 0 50px;
-}
-
-.Content__item--margined {
-  margin: 50px;
+  &__item {
+    &--sidemenu {
+      position: fixed;
+      margin: 0 50px;
+    }
+    &--margined {
+      margin: 50px;
+      @include phone {
+        margin: 20px;
+      }
+    }
+  }
 }
