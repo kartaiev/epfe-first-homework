@@ -42,13 +42,13 @@
   &__video {
     position: absolute;
     min-width: 100%;
-    min-height: auto;
+    min-height: 100%;
     object-fit: cover;
-      
+
     @include phone {
       display: none;
     }
-    
+
     @include tablet {
       display: none;
     }
@@ -66,5 +66,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: -webkit-fill-available;
   }
 }
