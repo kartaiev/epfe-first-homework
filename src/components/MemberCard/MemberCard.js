@@ -42,7 +42,6 @@ const MemberCard = props => {
     <Link to={`member/${id}`} className="MemberCard__link">
       <motion.li
         style={{ backgroundImage: `url(${image})` }}
-        transition={{ duration: 0.5 }}
         variants={containerVariants}
         initial="rest"
         whileHover="hover"
@@ -50,15 +49,10 @@ const MemberCard = props => {
         className={`Team__member MemberCard MemberCard--${id}`}
         id={id}
       >
-        <motion.span
-          transition={{ duration: 0.8 }}
-          variants={nameVariants}
-          className="MemberCard__name"
-        >
+        <motion.span variants={nameVariants} className="MemberCard__name">
           {name}
         </motion.span>
         <motion.div
-          transition={{ duration: 1 }}
           className="MemberCard__instrument"
           variants={instrumentVariants}
           style={{ backgroundImage: `url(${instrument})` }}
