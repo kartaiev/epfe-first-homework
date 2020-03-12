@@ -4,7 +4,7 @@ import Sound from 'react-sound';
 
 import './SliderAssets.scss';
 import { SliderContext } from '../../contexts/SliderContext';
-import songs from '../../assets/audio';
+import songs from '../../assets/audio/sliderAudio';
 
 const SliderAssets = ({ isPlaying, toggle }) => {
   const {

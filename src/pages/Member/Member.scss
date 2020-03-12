@@ -18,6 +18,7 @@ body {
   background-position: right top;
   background-size: contain;
 
+
   &__wrapper {
     width: 80%;
     padding: 15% 0 0 20%;
@@ -65,4 +66,8 @@ body {
       flex-direction: column;
     }
   }
+}
+
+.MemberPage--2 {
+  cursor: pointer;
 }
