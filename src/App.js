@@ -38,8 +38,8 @@ const App = () => {
   return (
     <>
       <Switch>
+        <Route path="/team/:name" component={Member} />
         <Route path="/team" component={Team} />
-        <Route path="/member/:id" component={Member} />
         <SliderProvider>
           <Route path="/" component={Home} exact />
         </SliderProvider>

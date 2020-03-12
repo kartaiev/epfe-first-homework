@@ -15,10 +15,11 @@ import teamPics from '../../assets/images/membersPics';
 const Member = props => {
   const {
     match: {
-      params: { id },
+      params: { name },
     },
   } = props;
 
+  const { id } = team.find(x => x.name === name);
   const member = team[id];
   const memberPic = teamPics[id];
 

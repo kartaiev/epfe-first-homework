@@ -39,7 +39,7 @@ const MemberCard = props => {
   console.log(instrument);
 
   return (
-    <Link to={`member/${id}`} className="MemberCard__link Team__member">
+    <Link to={`team/${name}`} className="MemberCard__link Team__member">
       <motion.li
         style={{ backgroundImage: `url(${image})` }}
         variants={containerVariants}
