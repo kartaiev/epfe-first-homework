@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Copyright from '../../components/Copyright/Copyright';
@@ -24,6 +24,10 @@ import CustomMember_3 from '../../components/CustomMember/CustomMember_3/CustomM
 import CustomMember_4 from '../../components/CustomMember/CustomMember_4/CustomMember_4';
 
 const Member = props => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const playStop = () => {
+    setIsPlaying(!isPlaying);
+  };
   const {
     match: {
       params: { name },
@@ -37,7 +41,7 @@ const Member = props => {
   const checkCustom = index => Number(id) === index; // +id === <index>
   const customClass = (state, index) => {
     // Please don't kill us for this :3
-    return state && !checkCustom(2)
+    return state
       ? `MemberPage MemberPage--${index} active-mod`
       : `MemberPage MemberPage--${index}`;
   };
@@ -61,11 +65,11 @@ const Member = props => {
       {({ state, toggle }) => (
         <>
           <div
-            onClick={checkCustom(2) ? toggle : null}
+            onClick={checkCustom(2) ? playStop : null}
             className={customClass(state, id)}
             style={{ backgroundImage: `url(${memberPic})` }}
           >
-            {checkCustom(2) && musicFunc(song, toggle, state)}
+            {checkCustom(2) && musicFunc(song, playStop, isPlaying)}
             <SideMenuContainer />
             <div className="MemberPage__wrapper">
               {customMemberName()}
