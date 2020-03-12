@@ -1,5 +1,6 @@
 @import '../../palette.scss';
 @import '../../reset_module.scss';
+@import '../../media_mixins.scss';
 
 body {
   background-color: $main-black;
@@ -18,25 +19,29 @@ body {
   background-size: contain;
 
   &--0 {
-    background-image: url('../../assets/images/photo-0.png');
+    background-image: url('../../assets/images/membersPics/brian_jonson.jpg');
   }
   &--1 {
-    background-image: url('../../assets/images/photo-1.png');
+    background-image: url('../../assets/images/membersPics/malcolm_young.jpg');
   }
   &--2 {
-    background-image: url('../../assets/images/photo-2.png');
+    background-image: url('../../assets/images/membersPics/angus_young_.jpg');
   }
   &--3 {
-    background-image: url('../../assets/images/photo-3.png');
+    background-image: url('../../assets/images/membersPics/axl_rose.jpg');
   }
   &--4 {
-    background-image: url('../../assets/images/photo-4.png');
+    background-image: url('../../assets/images/membersPics/drummer_lady.png');
   }
 
   &__wrapper {
     width: 80%;
     padding: 15% 0 0 20%;
     color: $main-white;
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -50,6 +55,11 @@ body {
     padding-bottom: 40px;
     font-size: 1.5rem;
     font-weight: 500;
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__instrument {
@@ -63,5 +73,12 @@ body {
 
   &__copyright-wrapper {
     margin: 50px 0;
+  }
+
+  &__contacts {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

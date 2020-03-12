@@ -1,3 +1,4 @@
+@import '../../media_mixins.scss';
 @import '../../palette.scss';
 
 @import '../../reset_module.scss';
@@ -29,6 +30,10 @@
   display: flex;
   width: 100%;
   position: relative;
+
+  @include phone {
+    flex-direction: column;
+  }
 
   // &:hover {
   // width: 40%;

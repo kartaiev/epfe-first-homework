@@ -20,7 +20,7 @@
   {
     "id": 1,
     "name": "Dima",
-    "instrument": "drums",
+    "instrument": "vocal",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
@@ -41,7 +41,7 @@
   {
     "id": 2,
     "name": "Vlad",
-    "instrument": "vocal",
+    "instrument": "guitar",
     "descriptions": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit2",
