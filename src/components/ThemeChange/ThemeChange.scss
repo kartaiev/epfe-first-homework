@@ -49,10 +49,9 @@
     }
   }
   &__image {
+    display: block;
+    margin: 70px;
     width: 300px;
-    position: absolute;
-    left: -2000px;
-    bottom: 0;
     opacity: 0;
     transition: 0.5s;
     animation: dance 0.5s infinite linear;
@@ -83,7 +82,6 @@
   }
 
   &:checked ~ .MemberPage .MemberPage__wrapper .ThemeChange__image {
-    left: 25%;
     opacity: 1;
     transition: 0.5s;
   }
