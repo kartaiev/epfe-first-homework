@@ -100,11 +100,11 @@ const Member = props => {
 };
 
 Member.propTypes = {
-  id: PropTypes.string,
+  name: PropTypes.string,
 };
 
 Member.defaultProps = {
-  id: '0',
+  name: 'Max',
 };
 
 export default Member;
