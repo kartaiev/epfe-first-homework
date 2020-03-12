@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContainer';
 import Copyright from '../../components/Copyright/Copyright';
@@ -24,6 +24,10 @@ import CustomMember_3 from '../../components/CustomMember/CustomMember_3/CustomM
 import CustomMember_4 from '../../components/CustomMember/CustomMember_4/CustomMember_4';
 
 const Member = props => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [isPlaying, setIsPlaying] = useState(false);
   const playStop = () => {
     setIsPlaying(!isPlaying);
