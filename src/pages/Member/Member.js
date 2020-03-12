@@ -5,6 +5,7 @@ import SideMenuContainer from '../../components/SideMenuContainer/SideMenuContai
 import Copyright from '../../components/Copyright/Copyright';
 import Contact from '../../components/Contact/Contact';
 import CustomMember_0 from '../../components/CustomMember/CustomMember_0/CustomMember_0';
+import CustomMember_3 from '../../components/CustomMember/CustomMember_3/CustomMember_3';
 import Toggle from '../../utilits/toggle';
 import './Member.scss';
 
@@ -39,7 +40,8 @@ const Member = props => {
         >
           <SideMenuContainer />
           <div className="MemberPage__wrapper">
-            <h1 className="MemberPage__name">{member.name}</h1>
+            {+id !== 3 && <h1 className="MemberPage__name">{member.name}</h1>}
+            {+id === 3 && <CustomMember_3 />}
             <h2 className="MemberPage__info">
               <span className="MemberPage__instrument">
                 {member.instrument}

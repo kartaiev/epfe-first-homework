@@ -1,9 +1,11 @@
 import React from 'react';
 import './CustomMember_0.scss';
 
+
 export default function CustomMember_0(props) {
   const { state, toggle } = props;
   const getClassName = state =>
+
     state ? 'CustomMember0__switcher mode-on' : 'CustomMember0__switcher';
 
   return (
@@ -15,3 +17,4 @@ export default function CustomMember_0(props) {
     </div>
   );
 }
+
