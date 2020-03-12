@@ -1,5 +1,6 @@
 @import '../../palette.scss';
 @import '../../reset_module.scss';
+@import '../../media_mixins.scss';
 
 body {
   background-color: $main-black;
@@ -17,26 +18,14 @@ body {
   background-position: right top;
   background-size: contain;
 
-  &--0 {
-    background-image: url('../../assets/images/brian_jonson.jpg');
-  }
-  &--1 {
-    background-image: url('../../assets/images/malcolm_young.jpg');
-  }
-  &--2 {
-    background-image: url('../../assets/images/angus_young_.jpg');
-  }
-  &--3 {
-    background-image: url('../../assets/images/axl_rose.jpg');
-  }
-  &--4 {
-    background-image: url('../../assets/images/drummer_lady.png');
-  }
-
   &__wrapper {
     width: 80%;
     padding: 15% 0 0 20%;
     color: $main-white;
+
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -50,6 +39,11 @@ body {
     padding-bottom: 40px;
     font-size: 1.5rem;
     font-weight: 500;
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__instrument {
@@ -63,5 +57,12 @@ body {
 
   &__copyright-wrapper {
     margin: 50px 0;
+  }
+
+  &__contacts {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
