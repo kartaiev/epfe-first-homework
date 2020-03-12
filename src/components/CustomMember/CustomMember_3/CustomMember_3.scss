@@ -1,50 +1,161 @@
 @import '../../../palette.scss';
+.MemberPage__name--beat {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $main-white;
+  font-size: 4.875em;
+  line-height: 55px;
+  width: 211px;
+  transition: all 0.5s cubic-bezier(0, 0.28, 0, 1);
+  position: relative;
+  margin-bottom: 20px;
 
-@function makelongshadow($length,$angle) {
-  $val: 0px 0px transparent;
-  @for $i from 1 through $length {
-    $val: #{$val}, #{$i}px #{$i*$angle}px $main-silver;
+  &:before,
+  &:after,
+  & div {
+    content: '';
+    height: 9px;
+    background-color: $main-white;
+    position: absolute;
+    right: 80%;
+    width: 0;
   }
-  @return $val;
-}
 
-.Shadow {
-  
-    font-size: 4rem;
-    animation: netflix_style 3.5s;
-    outline: none;
-    white-space: nowrap;
-}
+  &:before {
+    top: 0;
+  }
+  & > div:first-of-type {
+    top: 15px;
+  }
 
-@keyframes netflix_style {
-    0% {
-      text-shadow: makelongshadow(100,1);
-      color:$main-white;
-      transform: scale(1.5, 1.5);
-    }
-    10% {
-      text-shadow: makelongshadow(100,1.5);
-      color:$main-white;
-      transform: scale(1.5, 1.5);
-    }
-    15% {
-       color:$main-white;
-    }
-    20% {    
-      color:$main-red;
-      text-shadow: none;
-      transform: scale(1.1, 1.1);
-    }
-    75% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;    
-      color:$main-orangered;
-      transform: scale(0.85, 0.9);
-    }
-    
-    100% {
-      opacity: 0;
+  & > div:last-of-type {
+    top: 31px;
+  }
+  &:after {
+    top: 46px;
+  }
+
+  &:hover {
+    padding-left: 40px;
+
+    &:before {
+      animation: bar1 0.8s infinite;
     }
   }
+}
+
+@keyframes bar1 {
+  0% {
+    width: 10px;
+  }
+  5% {
+    width: 5px;
+  }
+  16% {
+    width: 25px;
+  }
+  32% {
+    width: 18px;
+  }
+  50% {
+    width: 28px;
+  }
+  66% {
+    width: 50px;
+  }
+  73% {
+    width: 45px;
+  }
+  100% {
+    width: 10px;
+  }
+}
+.MemberPage__name--beat:hover > div:last-of-type {
+  animation: bar2 0.8s infinite;
+}
+@keyframes bar2 {
+  0% {
+    width: 50px;
+  }
+  5% {
+    width: 15px;
+  }
+  16% {
+    width: 55px;
+  }
+  32% {
+    width: 18px;
+  }
+  50% {
+    width: 38px;
+  }
+  66% {
+    width: 50px;
+  }
+  73% {
+    width: 14px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+.MemberPage__name--beat:hover > div:first-of-type {
+  animation: bar3 0.8s infinite;
+}
+
+@keyframes bar3 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 35px;
+  }
+  16% {
+    width: 15px;
+  }
+  32% {
+    width: 25px;
+  }
+  50% {
+    width: 5px;
+  }
+  66% {
+    width: 20px;
+  }
+  73% {
+    width: 10px;
+  }
+  100% {
+    width: 30px;
+  }
+}
+.MemberPage__name--beat:hover:after {
+  animation: bar4 0.8s infinite;
+}
+
+@keyframes bar4 {
+  0% {
+    width: 10px;
+  }
+  5% {
+    width: 5px;
+  }
+  16% {
+    width: 15px;
+  }
+  32% {
+    width: 25px;
+  }
+  50% {
+    width: 20px;
+  }
+  66% {
+    width: 30px;
+  }
+  73% {
+    width: 20px;
+  }
+  100% {
+    width: 10px;
+  }
+}
