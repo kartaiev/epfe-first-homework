@@ -1,0 +1,30 @@
+@import '../../palette.scss';
+.ButtonBuyTicket {
+  &__button {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 700;
+    background-color: $main-gold;
+    border: 0;
+    color: $main-black;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      transition: 0.5s ease-in-out;
+      background-color: $main-black;
+      color: $main-white;
+    }
+  }
+}
+.not-avalible {
+  background-color: $main-gray;
+  &:hover {
+    background-color: $main-gray;
+    color: $main-black;
+    cursor: default;
+  }
+}

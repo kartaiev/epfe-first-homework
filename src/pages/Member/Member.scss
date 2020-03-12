@@ -9,15 +9,14 @@ body {
 .MemberPage {
   height: 100vh;
   min-height: 100vh;
-  margin: 0 50px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
-
+  transition: 1s ease-in-out;
 
   &__wrapper {
     width: 80%;

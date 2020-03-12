@@ -1,26 +1,44 @@
 [
   {
-    "dateTime": "2020-03-19 19:00",
-    "location": "Esplanada do classic hall",
-    "country": "Recife. Brazil",
+    "src": "https://www1.ticketmaster.com/bts-map-of-the-soul-tour/event/1C005831F0B77A36",
+    "dateTime": "2020-04-25 19:30",
+    "location": "Levi's® Stadium",
+    "country": "Santa Clara, CA",
     "isActive": true
   },
   {
-    "dateTime": "2020-03-21 21:00",
-    "location": "Area externa da jeunesse arena",
-    "country": "Rio de janeiro. Brazil",
-    "isActive": false
+    "src": "https://www1.ticketmaster.com/bts-map-of-the-soul-tour/event/1C005831F31A7CD8",
+    "dateTime": "2020-04-26 18:30",
+    "location": "Levi's® Stadium",
+    "country": "Santa Clara, CA",
+    "available": true
   },
   {
-    "dateTime": "2020-03-26 18:00",
-    "location": "Estadio cenenario",
-    "country": "Mentevideo. Uruguay",
-    "isActive": false
+    "src": "https://www.ticketmaster.com/bts-map-of-the-soul-tour/event/0B005831AF562FE1",
+    "dateTime": "2020-05-02 19:30",
+    "location": "Rose Bowl",
+    "country": "Pasadena, CA",
+    "available": false
   },
   {
-    "dateTime": "2020-04-05 20:00",
-    "location": "Campo argentino de polo",
-    "country": "Kyiv. Ukraine",
-    "isActive": false
+    "src": "https://www1.ticketmaster.com/bts-map-of-the-soul-tour/event/0B005831B02A3038",
+    "dateTime": "2020-05-03 19:30",
+    "location": "Rose Bowl",
+    "country": "Pasadena, CA",
+    "available": false
+  },
+  {
+    "src": "https://www.ticketmaster.com/bts-map-of-the-soul-tour/event/0B005844BBD43CB2",
+    "dateTime": "2020-05-05 19:30",
+    "location": "Rose Bowl",
+    "country": "Pasadena, CA",
+    "available": true
+  },
+  {
+    "src": "https://www.ticketmaster.com/bts-map-of-the-soul-tour/event/0C005835CB6D58C2",
+    "dateTime": "2020-05-09 19:30",
+    "location": "Cotton Bowl",
+    "country": "Dallas, TX",
+    "available": true
   }
 ]
