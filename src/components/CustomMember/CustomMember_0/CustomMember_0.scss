@@ -1,0 +1,192 @@
+@import '../../../palette.scss';
+
+@mixin pulse-lighter($color, $scale, $opacity) {
+  border: 2px solid $color;
+  transform: scale($scale);
+  transform-origin: center;
+  opacity: $opacity;
+}
+.CustomMember0 {
+  &__controller {
+    display: flex;
+  }
+  &__switcher {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      color: $main-orangered;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -25px;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: $main-orangered;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: -45px;
+      width: 40px;
+      height: 20px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      background-color: $main-white;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+    }
+  }
+}
+.mode-on {
+  opacity: 1;
+  transition: 0.5s;
+  &:after {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    right: -45px;
+    background-color: rgb(47, 229, 83);
+  }
+  &:before {
+    background-color: #fff;
+  }
+  &:hover {
+    color: rgb(47, 229, 83);
+  }
+}
+
+.active-mod {
+  transition: 1s ease-in-out;
+  background-color: $main-gray;
+  & .MemberPage__name,
+  & .MemberPage__instrument,
+  & .MemberPage__description {
+    color: $main-black;
+  }
+  & .CustomMember0__text {
+    color: $main-orangered;
+  }
+  & .Contact__link {
+    color: $main-orangered;
+    position: relative;
+    padding: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    &:hover {
+      animation: colored-light 0.5s forwards;
+    }
+    &:hover:before {
+      animation: pulsing-light 0.5s forwards;
+    }
+  }
+  & .Contact__divider {
+    color: $main-black;
+  }
+  & .SideMenuElement__link {
+    color: $main-black;
+    &:hover:before {
+      background-color: $main-orangered;
+    }
+  }
+}
+
+@keyframes colored-light {
+  0% {
+    color: $main-orangered;
+  }
+  10% {
+    color: rgba(253, 104, 65, 1);
+  }
+  20% {
+    color: rgba(253, 94, 53, 1);
+  }
+  30% {
+    color: rgba(253, 85, 41, 1);
+  }
+  40% {
+    color: rgba(253, 72, 25, 1);
+  }
+  50% {
+    color: rgba(218, 53, 10, 1);
+  }
+  60% {
+    color: rgba(181, 41, 5, 1);
+  }
+  70% {
+    color: rgba(153, 35, 4, 1);
+  }
+  80% {
+    color: rgba(75, 17, 1, 1);
+  }
+  90% {
+    color: rgba(41, 9, 1, 1);
+  }
+  100% {
+    color: $main-black;
+  }
+}
+
+@keyframes pulsing-light {
+  0% {
+    @include pulse-lighter($main-orangered, 1, 1);
+  }
+  10% {
+    @include pulse-lighter(rgba(253, 104, 65, 1), 1.025, 0.9);
+  }
+  20% {
+    @include pulse-lighter(rgba(253, 94, 53, 1), 1.05, 0.8);
+  }
+  30% {
+    @include pulse-lighter(rgba(253, 85, 41, 1), 1.075, 0.7);
+  }
+  40% {
+    @include pulse-lighter(rgba(253, 72, 25, 1), 1.1, 0.6);
+  }
+  50% {
+    @include pulse-lighter(rgba(218, 53, 10, 1), 1.125, 0.5);
+  }
+  60% {
+    @include pulse-lighter(rgba(181, 41, 5, 1), 1.15, 0.4);
+  }
+  70% {
+    @include pulse-lighter(rgba(153, 35, 4, 1), 1.175, 0.3);
+  }
+  80% {
+    @include pulse-lighter(rgba(75, 17, 1, 1), 1.2, 0.2);
+  }
+  90% {
+    @include pulse-lighter(rgba(41, 9, 1, 1), 1.225, 0.1);
+  }
+  100% {
+    @include pulse-lighter($main-black, 1.25, 0);
+  }
+}

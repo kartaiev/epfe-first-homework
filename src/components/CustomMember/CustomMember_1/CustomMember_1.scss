@@ -1,0 +1,21 @@
+@import '../../../palette.scss';
+
+.CustomMember1 {
+  &__name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $main-white;
+    text-transform: uppercase;
+    animation: jump 1.5s linear;
+  }
+}
+
+@keyframes jump {
+	10%, 40% {
+		transform: translateY(-48vh) scaleY(1);
+	}
+	
+	90% {
+		transform: translateY(-48vh) scaleY(4);
+	}
+}

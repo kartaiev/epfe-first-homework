@@ -1,0 +1,161 @@
+@import '../../../palette.scss';
+.MemberPage__name--beat {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $main-white;
+  font-size: 4.875em;
+  line-height: 55px;
+  width: 211px;
+  transition: all 0.5s cubic-bezier(0, 0.28, 0, 1);
+  position: relative;
+  margin-bottom: 20px;
+
+  &:before,
+  &:after,
+  & div {
+    content: '';
+    height: 9px;
+    background-color: $main-white;
+    position: absolute;
+    right: 80%;
+    width: 0;
+  }
+
+  &:before {
+    top: 0;
+  }
+  & > div:first-of-type {
+    top: 15px;
+  }
+
+  & > div:last-of-type {
+    top: 31px;
+  }
+  &:after {
+    top: 46px;
+  }
+
+  &:hover {
+    padding-left: 40px;
+
+    &:before {
+      animation: bar1 0.8s infinite;
+    }
+  }
+}
+
+@keyframes bar1 {
+  0% {
+    width: 10px;
+  }
+  5% {
+    width: 5px;
+  }
+  16% {
+    width: 25px;
+  }
+  32% {
+    width: 18px;
+  }
+  50% {
+    width: 28px;
+  }
+  66% {
+    width: 50px;
+  }
+  73% {
+    width: 45px;
+  }
+  100% {
+    width: 10px;
+  }
+}
+.MemberPage__name--beat:hover > div:last-of-type {
+  animation: bar2 0.8s infinite;
+}
+@keyframes bar2 {
+  0% {
+    width: 50px;
+  }
+  5% {
+    width: 15px;
+  }
+  16% {
+    width: 55px;
+  }
+  32% {
+    width: 18px;
+  }
+  50% {
+    width: 38px;
+  }
+  66% {
+    width: 50px;
+  }
+  73% {
+    width: 14px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+.MemberPage__name--beat:hover > div:first-of-type {
+  animation: bar3 0.8s infinite;
+}
+
+@keyframes bar3 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 35px;
+  }
+  16% {
+    width: 15px;
+  }
+  32% {
+    width: 25px;
+  }
+  50% {
+    width: 5px;
+  }
+  66% {
+    width: 20px;
+  }
+  73% {
+    width: 10px;
+  }
+  100% {
+    width: 30px;
+  }
+}
+.MemberPage__name--beat:hover:after {
+  animation: bar4 0.8s infinite;
+}
+
+@keyframes bar4 {
+  0% {
+    width: 10px;
+  }
+  5% {
+    width: 5px;
+  }
+  16% {
+    width: 15px;
+  }
+  32% {
+    width: 25px;
+  }
+  50% {
+    width: 20px;
+  }
+  66% {
+    width: 30px;
+  }
+  73% {
+    width: 20px;
+  }
+  100% {
+    width: 10px;
+  }
+}
