@@ -10,6 +10,9 @@
   @include phone {
     display: none;
   }
+  @include tablet {
+    display: none;
+  }
 
   &__author {
     position: relative;
